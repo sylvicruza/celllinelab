@@ -1,0 +1,351 @@
+.desktop2-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+}
+.layout-icon {
+    width: 124px;
+    height: 78px;
+    flex-shrink: 0;
+}
+
+.desktop2-desktop2 {
+    width: 100%;
+    height: 1024px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.desktop2-rectangle35 {
+    top: 0px;
+    left: 0px;
+    width: 720px;
+    height: 1024px;
+    position: absolute;
+    flex-shrink: 0;
+    background: #0D1B2A;
+}
+
+.desktop2-rectangle36 {
+    top: 141px;
+    left: 79px;
+    width: 555px;
+    height: 589px;
+    position: absolute;
+    flex-shrink: 0;
+    background: rgba(44, 42, 152, 0.40);
+}
+
+.desktop2-text {
+    top: 512px;
+    left: 139px;
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    position: absolute;
+    font-size: 16px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.desktop2-text05 {
+    top: 262px;
+    left: 813px;
+    color: #A5A097;
+    width: 318px;
+    height: auto;
+    position: absolute;
+    font-size: 16px;
+    font-style: normal;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.desktop2-validation {
+    top: 290px;
+    color: red;
+    left: 813px;
+    width: 485px;
+    height: auto;
+    position: absolute;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.desktop2-text07 {
+    top: 625px;
+    left: 1172px;
+    color: #C44536;
+    width: 137px;
+    height: auto;
+    position: absolute;
+    font-size: 14px;
+    font-style: normal;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.desktop2-text09 {
+    top: 625px;
+    left: 838px;
+    color: rgba(13, 27, 42, 1);
+    width: 137px;
+    height: auto;
+    position: absolute;
+    font-size: 14px;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.desktop2-text11 {
+    top: 234px;
+    left: 139px;
+    color: rgba(255, 255, 255, 1);
+    width: 398px;
+    height: auto;
+    position: absolute;
+    font-size: 42px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.desktop2-text12 {
+    color: rgba(255, 255, 255, 1);
+}
+
+.desktop2-ellipse1 {
+    top: 780px;
+    left: 97px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+
+.desktop2-ellipse3 {
+    top: 914px;
+    left: 55px;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+}
+
+.desktop2-ellipse5 {
+    top: 840px;
+    left: 1400px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+
+.desktop2-ellipse2 {
+    top: 850px;
+    left: 145px;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+}
+
+.desktop2-ellipse4 {
+    top: 955px;
+    left: 226px;
+    width: 34px;
+    height: 34px;
+    position: absolute;
+}
+
+.desktop2-ellipse6 {
+    top: 977px;
+    left: 1350px;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+}
+
+.desktop2-ellipse7 {
+    top: 882px;
+    left: 1298px;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+}
+
+.desktop2-ellipse8 {
+    top: 865px;
+    left: 1206px;
+    width: 34px;
+    height: 34px;
+    position: absolute;
+}
+
+.desktop2-text21 {
+    top: 199px;
+    left: 813px;
+    color: #000;
+    height: auto;
+    position: absolute;
+    font-size: 28px;
+    font-style: normal;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 800;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.desktop2-text23 {
+    top: 330px;
+    left: 813px;
+    color: #000;
+    height: auto;
+    position: absolute;
+    font-size: 14px;
+    font-style: normal;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 800;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.desktop2-text25 {
+    top: 502px;
+    left: 813px;
+    color: #000;
+    height: auto;
+    position: absolute;
+    font-size: 14px;
+    font-style: normal;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 800;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.desktop2-rectangle37 {
+    top: 365px;
+    left: 813px;
+    width: 485px;
+    height: 65px;
+    position: absolute;
+    border-radius: 4px;
+    background: #E1E1E1;
+    flex-shrink: 0;
+}
+
+.desktop2-rectangle38 {
+    top: 537px;
+    left: 813px;
+    width: 485px;
+    height: 65px;
+    position: absolute;
+    border-radius: 4px;
+    background: #E1E1E1;
+    flex-shrink: 0;
+}
+
+.desktop2-group82 {
+    top: 179px;
+    left: 97px;
+    width: 42px;
+    height: 46.66666793823242px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+}
+
+.desktop2-vector {
+    top: 0px;
+    left: 0px;
+    width: 42px;
+    height: 47px;
+    position: absolute;
+}
+
+.desktop2-group83 {
+    top: 689px;
+    left: 813px;
+    width: 485px;
+    height: 65px;
+    display: flex;
+    position: absolute;
+    align-items: center; /* Updated to vertically center the button */
+    justify-content: center; /* Updated to horizontally center the button */
+    flex-shrink: 1;
+    border-radius: 4px;
+    background: #373D8D;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.desktop2-text27 {
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+    border: none; /* Remove default button border */
+    background: transparent; /* Remove default button background */
+    cursor: pointer;
+    outline: none; /* Remove focus outline */
+}
+
+.desktop2-rectangle78 {
+    top: 628px;
+    left: 813px;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    border-radius: 2px;
+    background: #EDEBEA;
+}
+
+.desktop2-celllinelogoremovebgpreview1 {
+    top: 79px;
+    left: 798px;
+    width: 138px;
+    height: 86px;
+    position: absolute;
+    flex-shrink: 0;
+}

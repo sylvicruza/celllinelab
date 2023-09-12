@@ -1,0 +1,111 @@
+﻿@model Cell_line_laboratory.Models.CellLineModel
+@using System.Security.Claims
+
+
+@{
+    var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+}
+
+<h2>Create Cell Line</h2>
+@if (TempData["DebugInfo"] != null)
+{
+    <div class="debug-info">@TempData["DebugInfo"]</div>
+}
+
+@if (TempData["DebugInfoRowsAffected"] != null)
+{
+    <div class="debug-info">@TempData["DebugInfoRowsAffected"]</div>
+}
+
+@if (TempData["DebugInfoCellLinePosition"] != null)
+{
+    <div class="debug-info">@TempData["DebugInfoCellLinePosition"]</div>
+}
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+}
+
+
+@if (TempData["CellLineCodeError"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["CellLineCodeError"]
+    </div>
+}
+
+
+
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="CellLineCode"></label>
+        <input asp-for="CellLineCode" class="form-control" />
+        <span asp-validation-for="CellLineCode" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Genotype"></label>
+        <input asp-for="Genotype" class="form-control" />
+        <span asp-validation-for="Genotype" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ParentalLine"></label>
+        <input asp-for="ParentalLine" class="form-control" />
+    </div>
+
+ 
+@*    <label>Position</label>
+    <div>
+        @for (int i = 1; i <= 100; i++)
+        {
+            bool isPositionSelected = Model.SelectedPositions?.Contains(i) ?? false;
+            bool isPositionDisabled = ViewBag.SelectedPositionsInDatabase.Contains(i);
+
+            <label class="position-checkbox" style="@(isPositionDisabled ? "background-color: yellow;" : "")">
+                <input type="checkbox" name="viewModel.SelectedPositions" value="@i"
+                @(isPositionSelected ? "checked" : "")
+                @(isPositionDisabled ? "disabled" : "")
+                       class="@(isPositionDisabled ? "disabled-checkbox" : "")" />
+                @i
+            </label>
+        }
+    </div>*@
+
+
+
+    <label>Position</label>
+    <div>
+        @{
+            var selectedPositionsInDatabase = ViewBag.SelectedPositionsInDatabase as List<int> ?? new List<int>();
+        }
+        @for (int i = 1; i <= 100; i++)
+        {
+            bool isPositionInDatabase = selectedPositionsInDatabase.Contains(i);
+
+            <label class="position-checkbox" style="@(isPositionInDatabase ? "background-color: yellow;" : "")">
+                <input type="checkbox" name="selectedPositions" value="@i" @(isPositionInDatabase ? "disabled" : "") />
+                @i
+            </label>
+        }
+    </div>
+ 
+      <div class="form-group">
+        <label asp-for="Notes"></label>
+        <textarea asp-for="Notes" class="form-control"></textarea>
+    </div>
+
+    <!-- Add a hidden input field to include UserId -->
+    <input type="hidden" name="UserId" value="@userIdClaim?.Value" />
+
+    <button type="submit" class="btn btn-primary">Create</button>
+
+
+</form>
+
+<!-- Add JavaScript for client-side validation -->

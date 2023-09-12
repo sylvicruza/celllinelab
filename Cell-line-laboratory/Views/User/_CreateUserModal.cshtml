@@ -1,0 +1,75 @@
+﻿@model Cell_line_laboratory.Entities.User
+
+@{
+    ViewData["Title"] = "CreateUserModal";
+}
+
+
+<!-- Add patients modals -->
+<div class="modal fade" id="add-patient" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Add new user</h5>
+            </div>
+            <form asp-action="Create">
+                <div class="modal-body">
+
+
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="Name" class="control-label"></label>
+                        <input asp-for="Name" class="form-control" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Email" class="control-label"></label>
+                        <input asp-for="Email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Role" class="control-label"></label>
+                        <select asp-for="Role" class="selectpicker">
+                            <option value="">Select role</option>
+                            <option value="SuperUser" data-content="<span class='badge badge-success badge'>Super User - (can add/modify/upload/delete & add/remove users) </span>">Super User</option>
+                            <option value="Tier1" data-content="<span class='badge badge-info badge-ms'>Tier 1 - (can add/modify/upload/delete)</span>">Tier 1</option>
+                            <option value="Tier2" data-content="<span class='badge badge-primary badge-ms'>Tier 2 - (can only read/download/add/upload)</span>">Tier 2</option>
+                            <option value="Tier3" data-content="<span class='badge badge-secondary badge-ms'>Tier 3 -(can only read/download data entries/files)</span>">Tier 3</option>
+                        </select>
+                        <span asp-validation-for="Role" class="text-danger"></span>
+                    </div>
+
+
+
+
+                    <input asp-for="CreatedAt" type="hidden" />
+                    <input asp-for="Status" type="hidden" />
+                    <input asp-for="UserType" type="hidden" />
+                    <input asp-for="Password" type="hidden" />
+
+
+
+                    @*<div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                    </div>*@
+
+
+                </div>
+                <div class="modal-footer d-block">
+                    <div class="actions justify-content-between">
+                        <button type="button" class="btn btn-error" data-bs-dismiss="modal">Cancel</button>
+                        <input type="submit" value="Add user" class="btn btn-info">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- end Add patients modals -->
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

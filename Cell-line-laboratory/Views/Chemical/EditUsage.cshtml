@@ -1,0 +1,20 @@
+﻿@model Cell_line_laboratory.Models.DailyUsageViewModel
+
+<h2>Edit Usage</h2>
+
+<form method="post" asp-action="UpdateUsage">
+
+    <input type="hidden" asp-for="UsageId" />
+    <div class="form-group">
+        <label asp-for="Usage">Usage (%):</label>
+        <input asp-for="Usage" class="form-control" />
+        <span asp-validation-for="Usage" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Comment">Comment:</label>
+        <textarea asp-for="Comment" class="form-control"></textarea>
+        <span asp-validation-for="Comment" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+    <a asp-action="Search" class="btn btn-secondary">Cancel</a>
+</form>

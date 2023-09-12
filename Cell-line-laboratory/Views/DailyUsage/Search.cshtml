@@ -1,0 +1,100 @@
+﻿@model Cell_line_laboratory.Models.DailyUsageViewModel
+
+<h2>Cell Line Usage</h2>
+
+<form method="post" asp-action="PerformSearch">
+    <div class="form-group">
+        <label for="Code">Cell Line Code:</label>
+        <input type="text" name="Code" class="form-control" required />
+    </div>
+    <button type="submit" class="btn btn-primary mb-3">Search</button>
+</form>
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+}
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+}
+
+@if (Model != null && Model.CellLineDetails != null && !string.IsNullOrEmpty(Model.CellLineDetails.CellLineCode))
+{
+    <h3>Cell Line Details</h3>
+    <div>
+        <strong>Cell Line Code:</strong> @Model.CellLineDetails.CellLineCode<br />
+        <strong>Genotype:</strong> @Model.CellLineDetails.Genotype<br />
+        <strong>Parental Line:</strong> @Model.CellLineDetails.ParentalLine<br />
+        <strong>Date Created:</strong> @Model.CellLineDetails.Date<br />
+        <strong>Position:</strong> @Model.CellLineDetails.Position<br />
+        <strong>Note:</strong> @Model.CellLineDetails.Notes<br />
+        <strong>User:</strong> @Model.CellLineDetails.UserName<br />
+        <h4>Usage Logs</h4>
+        @if (Model.DailyUsages != null && Model.DailyUsages.Any())
+        {
+            <table id="dataTable" class="table table-hover">
+
+                <thead>
+                    <tr>
+                        <th>Date Updated</th>
+                        <th>Usage (%)</th>
+                        <th>Balance (%)</th>
+                        <th>Comment</th>
+                        <th>In-Put By</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var usage in Model.DailyUsages)
+                    {
+                        <tr>
+                            <td>@usage.Date</td>
+                            <td>@usage.Usage</td>
+                            <td>@usage.Balance</td>
+                            <td>@usage.Comment</td>
+                            <td>@usage.Username</td>
+@*                            <td>
+                                <a asp-action="EditUsage" asp-route-id="@usage.Id">Edit</a> |
+                                <a asp-action="DeleteUsage" asp-route-id="@usage.Id">Delete</a>
+                            </td>*@
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+
+        else
+        {
+            <p>No usage yet.</p>
+        }
+    </div>
+    <div>
+        <h4>Enter Daily Usage</h4>
+        <form method="post" asp-action="SaveDailyUsage">
+            <div class="form-group">
+                <label for="percentageUsed">Percentage Used:</label>
+                <input type="number" name="Usage" class="form-control" required />
+            </div>
+            <div class="form-group">
+                <label for="comment">Comment:</label>
+                <textarea name="Comment" class="form-control" required></textarea>
+            </div>
+            <input type="hidden" name="CellLineCode" value="@Model.CellLineDetails.CellLineCode" />
+            <button type="submit" class="btn btn-primary mb-3">Save</button>
+        </form>
+    </div>
+    <div>
+        
+        @if (!string.IsNullOrEmpty(TempData["ErrorMessage"] as string))
+        {
+            <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+        }
+        else if (!string.IsNullOrEmpty(TempData["SuccessMessage"] as string))
+        {
+            <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+        }
+    </div>
+
+}
+

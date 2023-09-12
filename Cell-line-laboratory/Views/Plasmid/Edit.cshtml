@@ -1,0 +1,61 @@
+﻿@model Cell_line_laboratory.Entities.Plasmid
+
+@{
+    ViewData["Title"] = "Edit / Update Plasmid";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+@if (TempData.ContainsKey("SuccessMessage"))
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+@if (TempData.ContainsKey("ErrorMessage"))
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+
+<!-- Your form goes here -->
+
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group">
+        <label asp-for="PlasmidCode"></label>
+        <input asp-for="PlasmidCode" class="form-control" />
+        <span asp-validation-for="PlasmidCode" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="PlasmidName"></label>
+        <input asp-for="PlasmidName" class="form-control" />
+        <span asp-validation-for="PlasmidName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Origin"></label>
+        <input asp-for="Origin" class="form-control" />
+        <span asp-validation-for="Origin" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="PlasmidMapLink"></label>
+        <input asp-for="PlasmidMapLink" class="form-control" />
+        <span asp-validation-for="PlasmidMapLink" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Note"></label>
+        <input asp-for="Note" class="form-control" />
+        <span asp-validation-for="Note" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</form>

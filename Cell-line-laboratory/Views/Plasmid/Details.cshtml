@@ -1,0 +1,22 @@
+﻿@model Cell_line_laboratory.Entities.Plasmid
+
+@{
+    ViewData["Title"] = "Details";
+    var userName = ViewData["UserName"] as string;
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p><strong>PlasmidCode:</strong> @Model.PlasmidCode</p>
+<p><strong>PlasmidName:</strong> @Model.PlasmidName</p>
+<p><strong>Origin:</strong> @Model.Origin</p>
+<p><strong>Date:</strong> @Model.Date</p>
+<p><strong>PlasmidMapLink:</strong> @Model.PlasmidMapLink</p>
+
+<p><strong>Date:</strong> @Model.Date</p>
+<p><strong>Notes:</strong> @Model.Note</p>
+
+<p><strong>User Name:</strong> @userName</p>
+
+<a href="@Url.Action("Edit", new { id = Model.Id })" class="btn btn-primary">Edit</a>
+<a href="@Url.Action("Index")" class="btn btn-secondary">Back to List</a>

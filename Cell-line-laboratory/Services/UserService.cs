@@ -1,0 +1,231 @@
+﻿using Cell_line_laboratory.Data;
+using Cell_line_laboratory.Entities;
+using Cell_line_laboratory.Exceptions;
+using Cell_line_laboratory.Models;
+using Cell_line_laboratory.Services.Interfaces;
+using Cell_line_laboratory.Utils;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using System.Text;
+
+
+namespace Cell_line_laboratory.Services
+{
+    public class UserService : IUserService
+    {
+
+        private readonly Cell_line_laboratoryContext _context;
+
+        public UserService(Cell_line_laboratoryContext context)
+        {
+            _context = context;
+        }
+
+        public async Task<List<User>> GetAllUsers() => await _context.User.ToListAsync();
+
+        public async Task<User> Authenticate(SignInViewModel model)
+        {
+            // Retrieve the user from the database using the provided username (email)
+            var user = await _context.User.FirstOrDefaultAsync(u => u.Email == model.Email);
+
+            if (user == null)
+            {
+                throw new AuthenticationException("Invalid email or password");
+            }
+
+            if (user.Status == "Blocked")
+            {
+                throw new AuthenticationException("User is blocked");
+            }
+
+            var passwordHasher = new PasswordHasher<User>();
+            var result = passwordHasher.VerifyHashedPassword(user, user.Password, model.Password);
+
+            if (result != PasswordVerificationResult.Success)
+            {
+                throw new AuthenticationException("Invalid email or password");
+            }
+
+            // Update User at login
+            user.Status = "Active";
+            user.LastUpdatedAt = DateTime.UtcNow; // This will be indempotent
+            await UpdateUser(user);
+
+            return user;
+        }
+
+
+
+        public async Task<User> GetUserByEmail(string email)
+        {
+            if (string.IsNullOrWhiteSpace(email))
+            {
+                throw new UserNotFoundException($"User with email {email} not found.");
+            }
+            var user = await _context.User
+
+                .FirstOrDefaultAsync(m => m.Email == email);
+            return user;
+        }
+
+
+        public async Task<User> GetUserId(int? id)
+        {
+            if (id == null || _context.User == null)
+            {
+                throw new UserNotFoundException($"User with id {id} not found.");
+            }
+
+            var user = await _context.User
+
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (user == null)
+            {
+                throw new UserNotFoundException($"User with id {id} not found.");
+            }
+            return user;
+        }
+
+        public async Task<User> GetUserByUserId(int? userId)
+        {
+            if (userId == null || _context.User == null)
+            {
+                throw new UserNotFoundException($"User with id {userId} not found.");
+            }
+
+            var user = await _context.User
+
+                .FirstOrDefaultAsync(m => m.Id == userId);
+            if (user == null)
+            {
+                throw new UserNotFoundException($"User with studentId {userId} not found.");
+            }
+
+
+            return user;
+        }
+
+        public async Task<bool> CreateUser(User User)
+        {
+            var existingUser = await _context.User.FirstOrDefaultAsync(i => i.Email == User.Email);
+
+            if (existingUser != null)
+            {
+                // Email already exists, return false or throw an exception indicating the failure
+                return false;
+            }
+            string generatedPassword = GenerateRandomPassword(10); // Generates a 10-character random password
+
+            string hashedPassword = HashPassword(generatedPassword);
+            CheckUserRole(User);
+            User.Password = hashedPassword;
+            _context.Add(User);
+            await _context.SaveChangesAsync();
+            //Send Email to user, this funtionality should only be uncommented if email smtp has been setup
+            await SendUserLoginPasswordEmailAsync(generatedPassword, User.Email);
+            return true;
+        }
+
+        private static void CheckUserRole(User User)
+        {
+            if (User.Role != null)
+            {
+                if (User.Role == "SuperUser")
+                {
+                    User.UserType = "SuperAdmin";
+                }
+                else if (User.Role == "Tier1")
+                {
+                    User.UserType = "PI";
+                }
+                else if (User.Role == "Tier2")
+                {
+                    User.UserType = "Staff";
+                }
+                else if (User.Role == "Tier3")
+                {
+                    User.UserType = "Student";
+                }
+            }
+        }
+
+        private static string HashPassword(string generatedPassword)
+        {
+            var password = generatedPassword; //User.Password; //future work make the password autogenerated
+            var passwordHasher = new PasswordHasher<object>();
+            var hashedPassword = passwordHasher.HashPassword(null, password);
+            return hashedPassword;
+        }
+
+        public static string GenerateRandomPassword(int length)
+        {
+            const string validChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+            var random = new Random();
+            var password = new StringBuilder();
+
+            for (int i = 0; i < length; i++)
+            {
+                int index = random.Next(validChars.Length);
+                password.Append(validChars[index]);
+            }
+
+            return password.ToString();
+        }
+
+
+        private async Task SendUserLoginPasswordEmailAsync(string password, string email)
+        {
+          
+            var emailBody = $"Welcome to Cell-Line Laboratory Management System,\n\n" +
+                            $"Thank you for signing up for Cell-Line!\n" +
+                            $"Your login password is: {password}";
+
+            await EmailSender.SendEmailAsync(email, "User Account Creation", emailBody);
+        }
+
+        public async Task UpdateUser(User User)
+        {
+            CheckUserRole(User);
+            _context.Update(User);
+            await _context.SaveChangesAsync();
+
+        }
+        public async Task DeleteUser(int id)
+        {
+            if (_context.User == null)
+            {
+                throw new Exception("Entity set 'StudentFeedbackSystemContext.User'  is null.");
+            }
+            var user = await _context.User.FindAsync(id);
+            if (user != null)
+            {
+                _context.User.Remove(user);
+            }
+
+            await _context.SaveChangesAsync();
+
+        }
+        public async Task<User> GetUser(int? id)
+        {
+            if (id == null || _context.User == null)
+            {
+                throw new UserNotFoundException($"User with id {id} not found.");
+            }
+
+            var user = await _context.User.FindAsync(id);
+            if (user == null)
+            {
+                throw new UserNotFoundException($"User with id {id} not found.");
+            }
+            return user;
+        }
+
+        public bool UserExists(int id)
+        {
+            return _context.User.Any(e => e.Id == id);
+        }
+
+        
+
+    }
+}

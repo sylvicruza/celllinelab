@@ -1,0 +1,343 @@
+.desktop1-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.desktop1-desktop1 {
+  width: 100%;
+  height: 1024px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(13, 27, 42, 1);
+}
+.desktop1-text {
+  top: 36px;
+  left: 240px;
+  color: #FFF;
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: normal;
+  text-align: left;
+  font-family: Montserrat;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+  cursor: pointer;
+
+ 
+}
+.desktop1-text02 {
+  top: 36px;
+  left: 357px;
+  color:  #FFF;
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: normal;
+  text-align: left;
+  font-family: Montserrat;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+  cursor: pointer;
+
+}
+.desktop1-text04 {
+  top: 36px;
+  left: 503px;
+  color: #FFF;
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: normal;
+  text-align: left;
+  font-family: Montserrat;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+  cursor: pointer;
+}
+.tab.active {
+  top: 71px;
+  left: 0; /* Set the initial left position to 0 */
+  width: 58px;
+  height: 6px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  background: #E4B715;
+  cursor: default;
+  transition: left 0.3s ease; /* Add smooth transition for left position */
+}
+
+.desktop-image {
+    /*top: 171px;
+    left: 73px;*/ /* Set the initial left position to 0 */
+    /*width: 10px;
+    height: 16px;*/
+    width: 515px;
+    height: 346px;
+    top: 171px;
+    left: 73px;
+    border: 1px;
+    position: absolute;
+    font-family: Montserrat;
+    font-size: 65px;
+    font-weight: 800;
+    line-height: 79px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+ /* Indicator styles */
+ .indicator {
+  height: 2px;
+  width: 60px; /* Adjust the width to match the tab width */
+  background-color: #000; /* Set the indicator color */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: transform 0.3s ease; /* Add smooth transition */
+}
+
+.tab-container {
+  position: relative;
+}
+
+.desktop1-ellipse9 {
+  top: 576px;
+  left: 591px;
+  width: 368px;
+  height: 368px;
+  position: absolute;
+  border-color: rgba(255, 255, 255, 1);
+  border-style: solid;
+  border-width: 3px;
+flex-shrink: 0;
+border-radius: 368px;
+border: 3px solid #FFF;
+}
+.desktop1-ellipse10 {
+  top: 208px;
+  left: 944px;
+  width: 368px;
+  height: 368px;
+  flex-shrink: 0;
+  position: absolute;
+  border-radius: 368px;
+border: 3px solid #FFF;
+}
+.desktop1-ellipse11 {
+  top: 597px;
+  left: 612px;
+  width: 326px;
+  height: 326px;
+  position: absolute;
+  flex-shrink: 0;
+  border-radius: 326px;
+  background: #C44536;
+}
+.desktop1-ellipse12 {
+  top: 229px;
+  left: 965px;
+ 
+  position: absolute;
+  border-radius: 326px;
+  background: #373D8D;
+width: 326px;
+height: 326px;
+flex-shrink: 0;
+}
+.desktop1-text06 {
+  top: 534px;
+  left: 72px;
+  color: #DDDBD9;
+  width: 363px;
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: normal;
+  text-align: left;
+  font-family: Montserrat;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.desktop1-group80 {
+  top: 26px;
+  left: 72px;
+  width: 62px;
+  height: 54px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.desktop1-vector1 {
+  top: 0px;
+  left: 0px;
+
+  position: absolute;
+  width: 62px;
+height: 54px;
+flex-shrink: 0;
+}
+.desktop1-vector2 {
+  top: 43px;
+  left: 48px;
+  width: 14px;
+  height: 6px;
+  position: absolute;
+  
+}
+.desktop1-rectangle37 {
+  top: 36px;
+  left: 1220px;
+  width: 152px;
+  height: 35px;
+  position: absolute;
+  border-radius: 4px;
+}
+.desktop1-group83 {
+  top: 653px;
+  left: 73px;
+  width: 284px;
+  height: 48px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+flex-shrink: 0;
+border-radius: 4px;
+background: #373D8D;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.desktop1-group83:hover {
+  background-color: rgba(85, 91, 166, 1); /* Add hover effect */
+}
+
+.desktop1-text08 {
+  width: 50px;
+height: 25px;
+flex-shrink: 0;
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.desktop1-rectangle40 {
+  top: 71px;
+  left: 260px;
+  width: 58px;
+  height: 6px;
+  position: absolute;
+  border-radius: 2px;
+}
+.desktop1-text10 {
+  top: 45px;
+  left: 1247px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+  display: inline-block; /* Added display property */
+  padding: 10px 20px; /* Added padding to make it look like a button */
+  background-color: rgba(55, 61, 141, 1); /* Button background color */
+  border: none; /* Remove default button border */
+  cursor: pointer;
+}
+
+.desktop1-text10:hover {
+  background-color: rgba(85, 91, 166, 1); /* Add hover effect */
+}
+
+.desktop1-text10:active {
+  background-color: rgba(25, 31, 106, 1); /* Add active effect (when the button is clicked) */
+}
+
+.desktop1-ellipse1 {
+  top: 789px;
+  left: 114px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+.desktop1-ellipse3 {
+  top: 923px;
+  left: 72px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+.desktop1-ellipse2 {
+  top: 859px;
+  left: 162px;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+}
+.desktop1-ellipse4 {
+  top: 964px;
+  left: 243px;
+  width: 34px;
+  height: 34px;
+  position: absolute;
+}
+.desktop1-ellipse5 {
+  top: 820px;
+  left: 1400px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+.desktop1-ellipse6 {
+  top: 957px;
+  left: 1350px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+.desktop1-ellipse7 {
+  top: 862px;
+  left: 1298px;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+}
+.desktop1-ellipse8 {
+  top: 845px;
+  left: 1206px;
+  width: 34px;
+  height: 34px;
+  position: absolute;
+}
+.desktop1-vector {
+  top: 788.8330078125px;
+  left: 243px;
+  width: 56px;
+  height: 45px;
+  position: absolute;
+}

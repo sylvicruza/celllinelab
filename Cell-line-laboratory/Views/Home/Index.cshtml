@@ -1,0 +1,310 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="page-content">
+    <div class="row">
+        <div class="col col-12 col-md-6 col-xl-3">
+            <div class="card animated fadeInUp delay-01s bg-light">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col col-5">
+                            <div class="icon p-0 fs-48 text-primary opacity-50 icofont-molecule"></div>
+
+                        </div>
+                        <div class="col col-7">
+                            <h6 class="mt-0 mb-1">Enzymes</h6>
+                            <div class="count text-primary fs-20">@ViewBag.EnzymesCount</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col col-12 col-md-6 col-xl-3">
+            <div class="card animated fadeInUp delay-02s bg-light">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col col-5">
+                            <div class="icon p-0 fs-48 text-primary opacity-50 icofont-test-tube"></div>
+                        </div>
+                        <div class="col col-7">
+                            <h6 class="mt-0 mb-1">Chemicals</h6>
+                            <div class="count text-primary fs-20">@ViewBag.ChemicalCount</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col col-12 col-md-6 col-xl-3">
+            <div class="card animated fadeInUp delay-03s bg-light">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col col-5">
+                            <div class="icon p-0 fs-48 text-primary opacity-50 icofont-dna-alt-1"></div>
+                        </div>
+                        <div class="col col-7">
+                            <h6 class="mt-0 mb-1">Cell Lines</h6>
+                            <div class="count text-primary fs-20">@ViewBag.CelllineCount</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col col-12 col-md-6 col-xl-3">
+            <div class="card animated fadeInUp delay-04s bg-light">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col col-5">
+                            <div class="icon p-0 fs-48 text-primary opacity-50 icofont-capsule"></div>
+                        </div>
+                        <div class="col col-7">
+                            <h6 class="mt-0 mb-1 text-nowrap">Plasmids</h6>
+                            <div class="count text-primary fs-20">@ViewBag.PlasmidCount</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">Usage Analysis</div>
+        <div class="card-body">
+            <div class="row">
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <label for="yearSelect">Select Year:</label>
+                        <select class="form-control" id="yearSelect">
+                            <!-- Add options dynamically using JavaScript -->
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="monthSelect">Select Month:</label>
+                        <select class="form-control" id="monthSelect">
+
+                            <!-- Add options dynamically using JavaScript -->
+                        </select>
+                    </div>
+                </div>
+                <div class="col col-12 col-md-12 col-xl-12">
+                    <div class="card animated fadeInUp delay-05s bg-light">
+                        <div class="card-body">
+                            <!-- Add the canvas for the chart -->
+                            <canvas id="myChart" width="400" height="200"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="row">
+        @* <div class="col col-12 col-md-6">
+        <div class="card">
+        <div class="card-body">
+        <h4 class="mt-0 mb-1">$25038</h4>
+        <p class="text-muted mb-0">Income in current month</p>
+        <div id="incomeEcharts" class="chat-container"></div>
+        </div>
+        </div>
+        </div>
+        <div class="col col-12 col-md-6">
+        <div class="card">
+        <div class="card-body">
+        <h4 class="mt-0 mb-1">$2195</h4>
+        <p class="text-muted mb-0">Income in current week</p>
+        <div id="income2Echarts" class="chat-container"></div>
+        </div>
+        </div>
+        </div>*@
+        @* <div class="col col-12 col-md-4">
+        <div class="card">
+        <div class="card-header">Patients age</div>
+        <div class="card-body">
+        <div id="ageEcharts" class="chat-container container-h-300"></div>
+        </div>
+        </div>
+        </div>
+        <div class="col col-12 col-md-4">
+        <div class="card">
+        <div class="card-header">Patients gender</div>
+        <div class="card-body">
+        <div id="genderEcharts" class="chat-container container-h-300"></div>
+        </div>
+        </div>
+        </div>
+        <div class="col col-12 col-md-4">
+        <div class="card">
+        <div class="card-header">Departments</div>
+        <div class="card-body">
+        <div id="departmentsEcharts" class="chat-container container-h-300"></div>
+        </div>
+        </div>
+        </div>*@
+    </div>
+    <div class="card mb-0">
+        <div class="card-header">Task Assigned</div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Photo</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+
+                            <th scope="col">Task Designated</th>
+                            <th scope="col">Assigned By</th>
+
+                            <th scope="col">Date</th>
+                            <th scope="col">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in ViewBag.AssignedTask)
+                        {
+                            <tr>
+                                <td><img src="/assets/img/avatar.png" alt="" width="40" height="40" class="rounded-500"></td>
+                                <td><strong>@item.User.Name</strong></td>
+                                <td>
+                                    <div class="d-flex align-items-center nowrap text-primary"><span class="icofont-ui-email p-0 me-2"></span> @item.User.Email</div>
+                                </td>
+
+                                <td>
+                                    <div class="text-muted text-nowrap">@item.Designation</div>
+                                </td>
+                                <td>
+                                    <div class="text-muted text-nowrap">@item.AssignedBy</div>
+                                </td>
+                                <td>
+                                    <div class="text-muted text-nowrap">@item.CreatedDate</div>
+                                </td>
+
+                                <td>
+                                    <div class="actions"><button class="btn btn-info btn-sm btn-square rounded-pill"><span class="btn-icon icofont-ui-edit"></span></button> <button class="btn btn-error btn-sm btn-square rounded-pill"><span class="btn-icon icofont-ui-delete"></span></button></div>
+                                </td>
+                            </tr>
+                        }
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Your HTML code as it is -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    function getMonthName(month) {
+        const monthNames = [
+            "January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December"
+        ];
+        return monthNames[month - 1];
+    }
+
+    $(document).ready(function () {
+
+        function fetchData(year, month) {
+            console.log(`Fetching data for Year: ${year}, Month: ${month}`);
+
+            $.ajax({
+                url: `/api/Data/GetCounts?year=${year}&month=${month}`,
+                type: 'GET',
+                success: function (data) {
+                    console.log(data);
+
+                    var cellLineData = data.cellLine;
+                    var chemicalsData = data.chemicals;
+                    var enzymesData = data.enzymes;
+                    var plasmidsData = data.plasmids;
+
+                    var ctx = document.getElementById('myChart').getContext('2d');
+
+                    var labels = ['Used', 'Semi-Used', 'Unused']; // Example labels
+                    // ...
+                    new Chart(ctx, {
+                        type: 'bar',
+                        data: {
+                            labels: ['Enzymes', 'Chemicals', 'Cell Line', 'Plasmids'],
+                            datasets: [
+                                {
+                                    label: 'Used',
+                                    data: [enzymesData.usedCount, chemicalsData.usedCount, cellLineData.usedCount, plasmidsData.usedCount],
+                                    backgroundColor: 'rgb(255, 102, 51)',
+                                    borderColor: 'rgb(255, 102, 51)',
+                                    borderWidth: 1,
+                                },
+                                {
+                                    label: 'Semi-Used',
+                                    data: [enzymesData.semiUsedCount, chemicalsData.semiUsedCount, cellLineData.semiUsedCount, plasmidsData.semiUsedCount],
+                                    backgroundColor: 'rgb(214, 181, 149)',
+                                    borderColor: 'rgb(214, 181, 149)',
+                                    borderWidth: 1,
+                                },
+                                {
+                                    label: 'Unused',
+                                    data: [enzymesData.unusedCount, chemicalsData.unusedCount, cellLineData.unusedCount, plasmidsData.unusedCount],
+                                    backgroundColor: 'rgb(51, 153, 51)',
+                                    borderColor: 'rgb(51, 153, 51)',
+                                    borderWidth: 1,
+                                }
+                            ]
+                        },
+                        options: {
+                            scales: {
+                                y: {
+                                    beginAtZero: true
+                                }
+                            }
+                        }
+                    });
+
+                    // ...
+
+                },
+                error: function (xhr, status, error) {
+                    console.error(xhr.responseText);
+                    console.error(status);
+                    console.error(error);
+                }
+            });
+        }
+        $('#yearSelect').change(function () {
+            var selectedYear = $(this).val();
+            var selectedMonth = $('#monthSelect').val();
+            fetchData(selectedYear, selectedMonth);
+        });
+
+        $('#monthSelect').change(function () {
+            var selectedYear = $('#yearSelect').val();
+            var selectedMonth = $(this).val();
+            fetchData(selectedYear, selectedMonth);
+        });
+
+        // Initial fetch with current year and month
+        var currentYear = new Date().getFullYear();
+        var initialMonth = new Date().getMonth() + 1; // January is 0 in JavaScript
+        fetchData(currentYear, initialMonth);
+
+        // Populate the year select dropdown with options
+        for (var i = currentYear; i >= currentYear - 5; i--) {
+            $('#yearSelect').append(`<option value="${i}">${i}</option>`);
+        }
+
+        for (var i = 1; i <= 12; i++) {
+            $('#monthSelect').append(`<option value="${i}">${getMonthName(i)}</option>`);
+        }
+    });
+
+
+
+
+
+
+</script>

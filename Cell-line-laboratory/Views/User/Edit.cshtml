@@ -1,0 +1,63 @@
+﻿@model Cell_line_laboratory.Entities.User
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+
+
+<header class="page-header">
+    <h1 class="page-title">Edit</h1>
+</header>
+<div class="page-content">
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Edit">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="Id" />
+                <input type="hidden" asp-for="Status" />
+                <input type="hidden" asp-for="CreatedAt" />
+                <input type="hidden" asp-for="Password" />
+                <input type="hidden" asp-for="CellLines" />
+
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label"></label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Role" class="control-label"></label>
+                    <select asp-for="Role" class="selectpicker">
+                        <option value="">Select role</option>
+                        <option value="SuperUser" data-content="<span class='badge badge-success badge'>Super User - (can add/modify/upload/delete & add/remove users) </span>">SuperUser</option>
+                        <option value="Tier1" data-content="<span class='badge badge-info badge-ms'>Tier 1 - (can add/modify/upload/delete)</span>">Tier1</option>
+                        <option value="Tier2" data-content="<span class='badge badge-primary badge-ms'>Tier 2 - (can only read/download/add/upload)</span>">Tier2</option>
+                        <option value="Tier3" data-content="<span class='badge badge-secondary badge-ms'>Tier 3 -(can only read/download data entries/files)</span>">Tier3</option>
+                    </select>
+                    <span asp-validation-for="Role" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="UserType" class="control-label"></label>
+                    <input asp-for="UserType" class="form-control" readonly />
+                    <span asp-validation-for="UserType" class="text-danger"></span>
+                </div>
+
+
+
+                <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+</div>

@@ -1,0 +1,220 @@
+﻿@model SignInViewModel
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="english">
+<head>
+    <title>Cell-Division Laboratory</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+        html {
+            line-height: 1.15;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+            border-width: 0;
+            border-style: solid;
+        }
+
+        p, li, ul, pre, div, h1, h2, h3, h4, h5, h6, figure, blockquote, figcaption {
+            margin: 0;
+            padding: 0;
+        }
+
+        button {
+            background-color: transparent;
+        }
+
+        button, input, optgroup, select, textarea {
+            font-family: inherit;
+            font-size: 100%;
+            line-height: 1.15;
+            margin: 0;
+        }
+
+        button, select {
+            text-transform: none;
+        }
+
+        button, [type="button"], [type="reset"], [type="submit"] {
+            -webkit-appearance: button;
+        }
+
+            button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+                border-style: none;
+                padding: 0;
+            }
+
+            button:-moz-focus, [type="button"]:-moz-focus, [type="reset"]:-moz-focus, [type="submit"]:-moz-focus {
+                outline: 1px dotted ButtonText;
+            }
+
+        a {
+            color: inherit;
+            text-decoration: inherit;
+        }
+
+        input {
+            padding: 2px 4px;
+        }
+
+        img {
+            display: block;
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+    </style>
+    <style data-tag="default-style-sheet">
+        html {
+            font-family: Inter;
+            font-size: 16px;
+        }
+
+        body {
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            text-transform: none;
+            letter-spacing: normal;
+            line-height: 1.15;
+            color: var(--dl-color-gray-black);
+            background-color: var(--dl-color-gray-white);
+        }
+    </style>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+          data-tag="font" />
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+          data-tag="font" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/cellline/assets/img/cellline_logo-removebg-preview 1.png">
+
+
+
+</head>
+<body>
+    <div>
+        <link href="/cellline/assets/css/desktop2.css" rel="stylesheet" />
+
+        <div class="desktop2-container">
+            <div class="desktop2-desktop2">
+                <div class="desktop2-rectangle35"></div>
+                <div class="desktop2-rectangle36"></div>
+                <div class="desktop2-group82">
+                    <img src="/cellline/assets/img/Group 82.png"
+                         alt="Vector4253"
+                         class="desktop2-vector" />
+                </div>
+                <span class="desktop2-text11">
+
+                    <span class="desktop2-text12">
+                        <span>Welcome to</span>
+                        <br />
+                        <span>Cell-Division</span>
+                        <br />
+                        <span>Lab Management</span>
+                        <br />
+                        <span></span>
+                    </span>
+                    <span>System</span>
+                </span>
+                <span class="desktop2-text">
+                    <span>
+                        <span>Efficient way of tracking and managing</span>
+                        <br />
+                        <span>people and laboratory data.</span>
+                    </span>
+                </span>
+
+
+
+
+                <img src="/cellline/assets/img/cellline_logo-removebg-preview 1.png"
+                     alt="celllinelogoremovebgpreview14253"
+                     class="desktop2-celllinelogoremovebgpreview1" />
+                <span class="desktop2-text21"><span>Hey, Welcome</span></span>
+
+
+                <form asp-action="SignIn" method="post">
+                    <span class="desktop2-text05">
+                        <span>Provide your credentials and continue</span>
+                        <br />
+                    </span>
+                    <span class="desktop2-validation">
+                        @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                        {
+                           @* <div class="alert alert-danger" role="alert">*@
+
+                                <ul>
+                                    <li>@error.ErrorMessage</li>
+                                </ul>
+                           @* </div>*@
+                        }
+                    </span>
+                    <span class="desktop2-text23"><span>Email</span></span>
+                    <input type="email" asp-for="Email" type="email" class="desktop2-rectangle37" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+
+                    <span class="desktop2-text25"><span>Password</span></span>
+                    <input asp-for="Password" type="password" class="desktop2-rectangle38" />
+
+                    <span asp-validation-for="Password" class="text-danger"></span>
+
+
+                    <input type="checkbox" asp-for="RememberMe" class="desktop2-rectangle78" /><span class="desktop2-text09"><span>Remember me</span></span>
+
+
+
+                    <button class="btn desktop2-group83" type="submit">
+                        <span class="desktop2-text27">Login</span>
+                    </button>
+
+                </form>
+                <a asp-controller="Home" asp-action="ForgotPassword" class="desktop2-text07">Forgot password?</a>
+
+                <svg class="desktop2-ellipse1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="10" fill="#D9D9D9" />
+                </svg>
+                <svg class="desktop2-ellipse3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="12" fill="white" />
+                </svg>
+                <svg class="desktop2-ellipse5" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="10" fill="#373D8D" />
+                </svg>
+                <svg class="desktop2-ellipse2" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+                    <circle cx="32" cy="32" r="32" fill="#E4B715" />
+                </svg>
+                <svg class="desktop2-ellipse4" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                    <circle cx="17" cy="17" r="17" fill="#D9D9D9" />
+                </svg>
+                <svg class="desktop2-ellipse6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="12" fill="#E4B715" />
+                </svg>
+                <svg class="desktop2-ellipse7" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+                    <circle cx="32" cy="32" r="32" fill="#C44536" />
+                </svg>
+                <svg class="desktop2-ellipse8" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                    <circle cx="17" cy="17" r="17" fill="#D9D9D9" />
+                </svg>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
+

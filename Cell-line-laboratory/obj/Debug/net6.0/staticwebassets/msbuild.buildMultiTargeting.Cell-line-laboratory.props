@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Cell-line-laboratory.props" />
+</Project>

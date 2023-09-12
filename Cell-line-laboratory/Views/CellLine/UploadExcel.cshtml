@@ -1,0 +1,44 @@
+﻿@model Cell_line_laboratory.Models.UploadExcelViewModel
+
+@{
+    ViewData["Title"] = "Upload CellLine Excel";
+}
+
+
+<script>
+    function validateForm() {
+        var fileInput = document.getElementById("excelFile");
+        if (fileInput.files.length === 0) {
+            alert("Please select an Excel file to upload.");
+            return false;
+        }
+        return true;
+    }
+</script>
+
+<div class="container">
+    <h2>@ViewData["Title"]</h2>
+
+    @if (TempData.ContainsKey("SuccessMessage"))
+    {
+        <div class="alert alert-success">
+            @TempData["SuccessMessage"]
+        </div>
+    }
+
+    @if (TempData.ContainsKey("ErrorMessage"))
+    {
+        <div class="alert alert-danger" id="errorMessage">
+            @TempData["ErrorMessage"]
+        </div>
+    }
+
+    <form method="post" enctype="multipart/form-data" onsubmit="return validateForm();">
+        <div class="mb-3">
+            <label for="excelFile" class="form-label">Select Excel File:</label>
+            <input type="file" class="form-control" name="file" id="excelFile" accept=".xlsx">
+        </div>
+        <button type="submit" class="btn btn-primary">Upload</button>
+        <a href="/uploads/SampleCellLineExcelFile.xlsx" class="btn btn-link" download>Download Sample Excel File</a>
+    </form>
+</div>

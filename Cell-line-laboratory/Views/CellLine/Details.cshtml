@@ -1,0 +1,31 @@
+﻿@model Cell_line_laboratory.Entities.CellLine
+
+@{
+    ViewData["Title"] = "Details";
+    var userName = ViewData["UserName"] as string;
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p><strong>CellLine Code:</strong> @Model.CellLineCode</p>
+<p><strong>Genotype:</strong> @Model.Genotype</p>
+<p><strong>Parental Line:</strong> @Model.ParentalLine</p>
+@*<p><strong>User:</strong> @Model.UserId</p>*@
+<p>
+    <strong>Position:</strong><br/>
+    @if (!Model.Position.StartsWith("CLD BOX 01-"))
+    {
+        <text>CLD BOX 01-</text>
+    }
+    @Html.Raw(Model.Position.Replace(",", ",<br/>CLD BOX 01-"))
+</p>
+
+
+
+<p><strong>Date:</strong> @Model.Date</p>
+<p><strong>Notes:</strong> @Model.Notes</p>
+
+<p><strong>User Name:</strong> @userName</p>
+
+<a href="@Url.Action("Edit", new { id = Model.Id })" class="btn btn-primary">Edit</a>
+<a href="@Url.Action("Index")" class="btn btn-secondary">Back to List</a>

@@ -1,0 +1,94 @@
+﻿@model List<Cell_line_laboratory.Entities.CellLine>
+
+@{
+    string status = ViewBag.Status;
+    DateTime? startDate = ViewBag.StartDate;
+    DateTime? endDate = ViewBag.EndDate;
+    string genotype = ViewBag.Genotype;
+}
+
+<h2>Search Cell Lines</h2>
+
+<form method="get" action="@Url.Action("SearchCellLines")">
+    <div class="form-group">
+        <label for="status">Status:</label>
+        <select name="status" class="form-control">
+            <option value="">All</option>
+            <option value="Semi-Used">Semi-Used</option>
+            <option value="Used">Used</option>
+            <option value="Unused">Unused</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="startDate">Start Date:</label>
+        <input type="date" name="startDate" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="endDate">End Date:</label>
+        <input type="date" name="endDate" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="genotype">Genotype:</label>
+        <select name="genotype" class="form-control">
+            <option value="">All</option>
+            @foreach (var distinctGenotype in ViewBag.DistinctGenotypes)
+            {
+                <option value="@distinctGenotype">@distinctGenotype</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Search</button>
+</form>
+@if (Model != null && Model.Count > 0)
+{
+    <h3>Search Results</h3>
+    <table class="table">
+        <!-- Table headers... -->
+        <tbody>
+            @foreach (var cellLine in Model)
+            {
+                <tr>
+                    <td>@cellLine.CellLineCode</td>
+                    <td>@cellLine.Genotype</td>
+                    <td>@cellLine.Position</td>
+                    <td>@cellLine.ParentalLine</td>
+                    <td>@cellLine.Status</td>
+                    <td>@cellLine.Date.ToString("yyyy-MM-dd")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <br/>
+
+    <!-- Pagination controls -->
+
+    <nav aria-label="Search Results Pagination">
+        <ul class="pagination">
+            @if (ViewBag.CurrentPage > 1)
+            {
+                <li class="page-item">
+                    <a class="page-link" href="@Url.Action("SearchCellLines", new { status = status, startDate = startDate, endDate = endDate, genotype = genotype, page = ViewBag.CurrentPage - 1 })">Previous</a>
+                </li>
+            }
+
+            @for (int i = 1; i <= ViewBag.TotalPages; i++)
+            {
+                <li class="page-item @(i == ViewBag.CurrentPage ? "active" : "")">
+                    <a class="page-link" href="@Url.Action("SearchCellLines", new { status = status, startDate = startDate, endDate = endDate, genotype = genotype, page = i })">@i</a>
+                </li>
+            }
+
+            @if (ViewBag.CurrentPage < ViewBag.TotalPages)
+            {
+                <li class="page-item">
+                    <a class="page-link" href="@Url.Action("SearchCellLines", new { status = status, startDate = startDate, endDate = endDate, genotype = genotype, page = ViewBag.CurrentPage + 1 })">Next</a>
+                </li>
+            }
+        </ul>
+    </nav>
+    <br/>
+
+
+
+    <a href="@Url.Action("DownloadExcel", new { status = status, startDate = startDate, endDate = endDate, genotype = genotype })" class="btn btn-success">Download Search Results as Excel</a>
+}

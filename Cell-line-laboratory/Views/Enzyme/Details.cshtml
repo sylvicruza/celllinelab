@@ -1,0 +1,24 @@
+﻿@model Cell_line_laboratory.Entities.Enzyme
+
+@{
+    ViewData["Title"] = "Details";
+    var userName = ViewData["UserName"] as string;
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p><strong>EnzymeCode:</strong> @Model.PlasmidCode</p>
+<p><strong>EnzymeName:</strong> @Model.AntibodyName</p>
+<p><strong>CatalogueNo:</strong> @Model.CatalogueNo</p>
+<p><strong>Maker:</strong> @Model.Maker</p>
+<p><strong>Date:</strong> @Model.Date</p>
+<p><strong>Data:</strong> @Model.Data</p>
+<p><strong>Location:</strong> @Model.Location</p>
+
+<p><strong>Date:</strong> @Model.Date</p>
+<p><strong>Notes:</strong> @Model.Note</p>
+
+<p><strong>User Name:</strong> @userName</p>
+
+<a href="@Url.Action("Edit", new { id = Model.Id })" class="btn btn-primary">Edit</a>
+<a href="@Url.Action("Index")" class="btn btn-secondary">Back to List</a>

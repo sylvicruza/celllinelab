@@ -1,0 +1,100 @@
+﻿@model Cell_line_laboratory.Models.DailyUsageViewModel
+
+<h2>Plasmid Usage</h2>
+
+<form method="post" asp-action="PerformSearch">
+    <div class="form-group">
+        <label for="Code">Plasmid Code:</label>
+        <input type="text" name="Code" class="form-control" required />
+    </div>
+    <button type="submit" class="btn btn-primary mb-3">Search</button>
+</form>
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+}
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+}
+
+@if (Model != null && Model.PlasmidDetails != null && !string.IsNullOrEmpty(Model.PlasmidDetails.PlasmidCode))
+{
+    <h3>Plasmid Details</h3>
+    <div>
+        <strong>Plasmid Code:</strong> @Model.PlasmidDetails.PlasmidCode<br />
+        <strong>Plasmid Name:</strong> @Model.PlasmidDetails.PlasmidName<br />
+        <strong>MapLink:</strong> @Model.PlasmidDetails.PlasmidMapLink<br />
+        <strong>Date Created:</strong> @Model.PlasmidDetails.Date<br />
+        <strong>Origin:</strong> @Model.PlasmidDetails.Origin<br />
+        <strong>Note:</strong> @Model.PlasmidDetails.Note<br />
+        <strong>User:</strong> @Model.PlasmidDetails.User.Name<br />
+        <h4>Usage Logs</h4>
+        @if (Model.DailyUsages != null && Model.DailyUsages.Any())
+        {
+            <table id="dataTable" class="table table-hover">
+
+                <thead>
+                    <tr>
+                        <th>Date Updated</th>
+                        <th>Usage (%)</th>
+                        <th>Balance (%)</th>
+                        <th>Comment</th>
+                        <th>In-Put By</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var usage in Model.DailyUsages)
+                    {
+                        <tr>
+                            <td>@usage.Date</td>
+                            <td>@usage.Usage</td>
+                            <td>@usage.Balance</td>
+                            <td>@usage.Comment</td>
+                            <td>@usage.Username</td>
+@*                            <td>
+                                <a asp-action="EditUsage" asp-route-id="@usage.Id">Edit</a> |
+                                <a asp-action="DeleteUsage" asp-route-id="@usage.Id">Delete</a>
+                            </td>*@
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+
+        else
+        {
+            <p>No usage yet.</p>
+        }
+    </div>
+    <div>
+        <h4>Enter Daily Usage</h4>
+        <form method="post" asp-action="SaveDailyUsage">
+            <div class="form-group">
+                <label for="percentageUsed">Percentage Used:</label>
+                <input type="number" name="Usage" class="form-control" required />
+            </div>
+            <div class="form-group">
+                <label for="comment">Comment:</label>
+                <textarea name="Comment" class="form-control" required></textarea>
+            </div>
+            <input type="hidden" name="Code" value="@Model.PlasmidDetails.PlasmidCode" />
+            <button type="submit" class="btn btn-primary mb-3">Save</button>
+        </form>
+    </div>
+    <div>
+        
+        @if (!string.IsNullOrEmpty(TempData["ErrorMessage"] as string))
+        {
+            <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+        }
+        else if (!string.IsNullOrEmpty(TempData["SuccessMessage"] as string))
+        {
+            <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+        }
+    </div>
+
+}
+

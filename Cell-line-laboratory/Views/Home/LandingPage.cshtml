@@ -1,0 +1,203 @@
+﻿@{
+    ViewData["Title"] = "LandingPage";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="english">
+<head>
+    <title>CellDivision - Laboratory Management System </title>
+    <meta name="keywords" content="MedicApp">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <!-- Plugins CSS -->
+
+    <style data-tag="reset-style-sheet">
+        html {
+            line-height: 1.15;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+            border-width: 0;
+            border-style: solid;
+        }
+
+        p, li, ul, pre, div, h1, h2, h3, h4, h5, h6, figure, blockquote, figcaption {
+            margin: 0;
+            padding: 0;
+        }
+
+        button {
+            background-color: transparent;
+        }
+
+        button, input, optgroup, select, textarea {
+            font-family: inherit;
+            font-size: 100%;
+            line-height: 1.15;
+            margin: 0;
+        }
+
+        button, select {
+            text-transform: none;
+        }
+
+        button, [type="button"], [type="reset"], [type="submit"] {
+            -webkit-appearance: button;
+        }
+
+            button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+                border-style: none;
+                padding: 0;
+            }
+
+            button:-moz-focus, [type="button"]:-moz-focus, [type="reset"]:-moz-focus, [type="submit"]:-moz-focus {
+                outline: 1px dotted ButtonText;
+            }
+
+        a {
+            color: inherit;
+            text-decoration: inherit;
+        }
+
+        input {
+            padding: 2px 4px;
+        }
+
+        img {
+            display: block;
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+    </style>
+    <style data-tag="default-style-sheet">
+        html {
+            font-family: Inter;
+            font-size: 16px;
+        }
+
+        body {
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            text-transform: none;
+            letter-spacing: normal;
+            line-height: 1.15;
+            color: var(--dl-color-gray-black);
+            background-color: var(--dl-color-gray-white);
+        }
+    </style>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+          data-tag="font" />
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+          data-tag="font" />
+
+</head>
+<body>
+    <div>
+        <link href="/cellline/assets/css/index.css" rel="stylesheet" />
+
+        <div class="desktop1-container">
+            <div class="desktop1-desktop1">
+                <!-- Your existing HTML -->
+
+                <span class="desktop1-text tab" onclick="selectTab('Home')">Home</span>
+                <span class="desktop1-text02 tab" onclick="selectTab('About Us')">About Us</span>
+                <span class="desktop1-text04 tab" onclick="selectTab('Contact Us')">Contact Us</span>
+
+                <img alt="Ellipse94253" src="" class="desktop1-ellipse9" />
+                <img alt="Ellipse104253" src="" class="desktop1-ellipse10" />
+                <img alt="Ellipse114253" src="/cellline/assets/img/ani-kolleshi-7jjnJ-QA9fY-unsplash-removebg-preview 1.png" class="desktop1-ellipse11" />
+                <img alt="Ellipse124253" src="/cellline/assets/img/sharon-pittaway-4_hFxTsmaO4-unsplash-removebg-preview 1.png" class="desktop1-ellipse12" />
+
+                <img class="desktop-image" alt="4365" src="/cellline/assets/img/CELL-DIVISION LABORATORY MANAGEMENT SYSTEM.png" />
+
+
+                <span class="desktop1-text06">
+
+                    <span>
+                        Cell-Division laboratory management system assists
+                        in data management and analysis, planning and scheduling,
+                        and the overall operations of the lab.
+                    </span>
+                </span>
+                <div class="desktop1-group80">
+                    <img alt="Vector14253"
+                         src="/cellline/assets/img/Group 80.png"
+                         class="desktop1-vector1" />
+
+                </div>
+
+
+                <a asp-asp-controller="Home" asp-action="SignIn" class="desktop1-group83">
+                    <span class="desktop1-text08"><span>Login</span></span>
+                </a>
+
+
+
+                @*<a href="#" class="desktop1-text10">Coming soon</a>*@
+
+
+                <svg class="desktop1-ellipse1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="10" fill="#D9D9D9" />
+                </svg>
+                <svg class="desktop1-ellipse2" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+                    <circle cx="32" cy="32" r="32" fill="#E4B715" />
+                </svg>
+                <svg class="desktop1-ellipse4" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                    <circle cx="17" cy="17" r="17" fill="#D9D9D9" />
+                </svg>
+                <svg class="desktop1-ellipse3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="12" fill="white" />
+                </svg>
+                <svg class="desktop1-ellipse5" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="10" fill="white" />
+                </svg>
+                <svg class="desktop1-ellipse6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="12" fill="#E4B715" />
+                </svg>
+                <svg class="desktop1-ellipse7" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+                    <circle cx="32" cy="32" r="32" fill="#C44536" />
+                </svg>
+                <svg class="desktop1-ellipse8" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                    <circle cx="17" cy="17" r="17" fill="#D9D9D9" />
+                </svg>
+                <svg class="desktop1-vector" xmlns="http://www.w3.org/2000/svg" width="46" height="56" viewBox="0 0 46 56" fill="none">
+                    <path d="M40.1831 53.4296C39.9291 56.6464 44.9311 56.6219 45.1831 53.4296C46.8647 32.1044 30.7495 14.6683 12.9155 5.41833C14.7065 5.2821 16.4985 5.14537 18.2905 5.00866C21.4848 4.76501 21.5083 -0.236465 18.2905 0.00865555C13.0561 0.407585 7.82173 0.806999 2.58735 1.20593C0.930121 1.33239 -0.831599 3.32361 0.428171 4.96765C3.62153 9.13562 6.81489 13.3036 10.0083 17.4716C11.9409 19.9935 16.2876 17.5082 14.3266 14.9481C12.9526 13.1551 11.5786 11.3622 10.2055 9.56873C26.6352 17.8256 41.7231 33.9017 40.1831 53.4296Z" fill="white" />
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function selectTab(tabText) {
+            const tabs = document.getElementsByClassName('tab');
+            for (let i = 0; i < tabs.length; i++) {
+                const currentTab = tabs[i];
+                const tabInnerText = currentTab.innerText.trim();
+                if (tabInnerText === tabText) {
+                    currentTab.classList.add('active');
+                    const indicator = document.querySelector('.tab.active');
+                    indicator.style.left = `${currentTab.offsetLeft}px`;
+                } else {
+                    currentTab.classList.remove('active');
+                }
+            }
+        }
+
+    </script>
+
+</body>
+</html>
+

@@ -1,0 +1,356 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CellDivine - Laboratory Management System </title>
+    <meta name="keywords" content="MedicApp">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="/assets/css/icofont.min.css">
+    <link rel="stylesheet" href="/assets/css/simple-line-icons.css">
+    <link rel="stylesheet" href="/assets/css/jquery.typeahead.css">
+    <link rel="stylesheet" href="/assets/css/datatables.min.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="/assets/css/Chart.min.css">
+    <link rel="stylesheet" href="/assets/css/morris.css">
+    <link rel="stylesheet" href="/assets/css/leaflet.css">
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body class="vertical-layout boxed">
+    <div class="app-loader main-loader">
+        <div class="loader-box">
+            <div class="bounceball"></div>
+            <div class="text">CellDivision<span>lab</span></div>
+        </div>
+    </div>
+    <!-- .main-loader -->
+    <div class="page-box">
+        <div class="app-container">
+            <!-- Horizontal navbar -->
+            <div id="navbar1" class="app-navbar horizontal">
+                <div class="navbar-wrap">
+                    <button class="no-style navbar-toggle navbar-open d-lg-none"><span></span><span></span><span></span></button>
+                    @*<form class="app-search d-none d-md-block">
+                        <div class="form-group typeahead__container with-suffix-icon mb-0">
+                            <div class="typeahead__field">
+                                <div class="typeahead__query">
+                                    <input class="form-control autocomplete-control topbar-search" type="search" placeholder="Type page's title" autocomplete="off" data-source="/assets/data/search-menu.json">
+                                    <div class="suffix-icon icofont-search"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>*@
+                    <div class="app-actions">
+                       @* <div class="dropdown item">
+                            <button class="no-style dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0, 12"><span class="icon icofont-notification"></span> <span class="badge badge-danger badge-sm">5</span></button>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-w-280">
+                                <div class="menu-header">
+                                    <h4 class="h5 menu-title mt-0 mb-0">Notifications</h4>
+                                    <a href="index.html#" class="text-danger">Clear All</a>
+                                </div>
+                                <ul class="list">
+                                    <li>
+                                        <a href="index.html#">
+                                            <span class="icon icofont-heart"></span>
+                                            <div class="content"><span class="desc">Sara Crouch liked your photo</span> <span class="date">17 minutes ago</span></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#">
+                                            <span class="icon icofont-users-alt-6"></span>
+                                            <div class="content"><span class="desc">New user registered</span> <span class="date">23 minutes ago</span></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#">
+                                            <span class="icon icofont-share"></span>
+                                            <div class="content"><span class="desc">Amanda Lie shared your post</span> <span class="date">25 minutes ago</span></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#">
+                                            <span class="icon icofont-users-alt-6"></span>
+                                            <div class="content"><span class="desc">New user registered</span> <span class="date">32 minutes ago</span></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#">
+                                            <span class="icon icofont-ui-message"></span>
+                                            <div class="content"><span class="desc">You have a new message</span> <span class="date">58 minutes ago</span></div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="menu-footer"><button class="btn btn-primary w-100">View all notifications <span class="btn-icon ms-2 icofont-tasks-alt"></span></button></div>
+                            </div>
+                        </div>*@
+                        <div class="dropdown item">
+                            <button class="no-style dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0, 10"><span class="d-flex align-items-center"><img src="/assets/img/profile1.png" alt="" width="40" height="40" class="rounded-500 me-1"> <i class="icofont-simple-down"></i></span></button>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-w-180">
+                                <ul class="list">
+                              
+                                    <li><a href="user-profile.html" class="align-items-center"><span class="icon icofont-ui-user"></span> User profile</a></li>
+
+                                    <li><a href="index.html#" class="align-items-center"><span class="icon icofont-ui-settings"></span> Settings</a></li>
+                                    <li><a asp-controller="Home" asp-action="Logout" class="align-items-center"><span class="icon icofont-logout"></span> Log Out</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar-skeleton horizontal">
+                        <div class="left-part d-flex align-items-center"><span class="navbar-button bg animated-bg d-lg-none"></span> <span class="sk-logo bg animated-bg d-none d-lg-block"></span> <span class="search d-none d-md-block bg animated-bg"></span></div>
+                        <div class="right-part d-flex align-items-center">
+                            <div class="icon-box"><span class="icon bg animated-bg"></span> <span class="badge"></span></div>
+                            <span class="avatar bg animated-bg"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end Horizontal navbar --><!-- Vertical navbar -->
+            <div id="navbar2" class="app-navbar vertical">
+                <div class="navbar-wrap">
+                    <button class="no-style navbar-toggle navbar-close icofont-close-line d-lg-none"></button>
+                    <div class="app-logo">
+                        <div class="logo-wrap">
+                            <!-- Image logo -->
+
+                            <img src="/cellline/assets/img/cellline_logo-removebg-preview 1.png" alt="" width="130" height="150">
+
+                            <!-- end Image logo --><!-- SVG logo -->
+                            <!-- end SVG logo -->
+                        </div>
+                    </div>
+                    <div class="main-menu">
+                        <nav class="main-menu-wrap">
+                            <ul class="menu-ul">
+                                <li class="menu-item"><span class="group-title">Dashboard</span></li>
+                                <li class="menu-item"><a class="item-link" asp-controller="Home" asp-action="Index"><span class="link-icon icofont-dashboard"></span> <span class="link-text">Dashboard</span></a></li>
+                                
+                                <li class="menu-item"><span class="group-title">Admin Portal</span></li>
+                                <li class="menu-item has-sub">
+                                    <a href="#" class="item-link"><span class="link-icon icofont-user"></span> <span class="link-text">Manage User</span> <span class="link-caret icofont-thin-right"></span></a>
+                                    <ul class="sub">
+                                        <li class="menu-item"><a class="item-link" asp-controller="User" asp-action="Index"><span class="link-text">Add/View</span></a></li>
+
+
+                                    </ul>
+                                </li>
+                                
+                                <li class="menu-item"><span class="group-title">Database</span></li>
+                               
+                                <li class="menu-item has-sub">
+                                    <a class="item-link" href="#"><span class="link-icon icofont-dna-alt-1"></span> <span class="link-text">Cell Lines</span><span class="link-caret icofont-thin-right"></span></a>
+                                    <ul class="sub">
+                                        <li class="menu-item"><a class="item-link" asp-controller="CellLine" asp-action="Index"><span class="link-text">View </span></a></li>
+                                        <li class="menu-item"><a class="item-link" asp-controller="CellLine" asp-action="Create"><span class="link-text">Create </span></a></li>
+                                        <li class="menu-item"><a class="item-link" asp-controller="CellLine" asp-action="UploadExcel"><span class="link-text">Upload</span></a></li>
+                                        <li class="menu-item"><a class="item-link" asp-controller="CellLine" asp-action="SearchCellLines"><span class="link-text"> Download </span></a></li>
+                                        <li class="menu-item"><a class="item-link" asp-controller="CellLine" asp-action="Search"><span class="link-text"> Daily Usage</span></a></li>
+                                        <li class="menu-item"><a class="item-link" asp-controller="CellLine" asp-action="DeletedItems"><span class="link-text">View Deleted Items</span></a></li>
+
+                                    </ul>
+
+                                </li>
+                                <li class="menu-item has-sub">
+                                    <a class="item-link" href="#"><span class="link-icon icofont-pay"></span> <span class="link-text">Plasmids</span><span class="link-caret icofont-thin-right"></span></a>
+                                    <ul class="sub">
+                                        <li class="menu-item"><a class="item-link" asp-controller="Plasmid" asp-action="Index"><span class="link-text">View </span></a></li>
+                                        <li class="menu-item"><a class="item-link" asp-controller="Plasmid" asp-action="Create"><span class="link-text">Create </span></a></li>
+                                        <li class="menu-item"><a class="item-link" asp-controller="Plasmid" asp-action="UploadExcel"><span class="link-text">Upload</span></a></li>
+                                        <li class="menu-item"><a class="item-link" asp-controller="Plasmid" asp-action="SearchCellLines"><span class="link-text"> Download </span></a></li>
+                                   
+                                        <li class="menu-item"><a class="item-link" asp-controller="Plasmid" asp-action="DeletedItems"><span class="link-text">View Deleted Items</span></a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="menu-item has-sub">
+                                    <a class="item-link" href="#"><span class="link-icon icofont-molecule"></span> <span class="link-text">Enzymes</span><span class="link-caret icofont-thin-right"></span></a>
+                                    <ul class="sub">
+                                        <li class="menu-item"><a class="item-link" asp-controller="Enzyme" asp-action="Index"><span class="link-text">View </span></a></li>
+                                        <li class="menu-item"><a class="item-link" asp-controller="Enzyme" asp-action="Create"><span class="link-text">Create </span></a></li>
+                                        <li class="menu-item"><a class="item-link" asp-controller="Enzyme" asp-action="UploadExcel"><span class="link-text">Upload</span></a></li>
+                                        <li class="menu-item"><a class="item-link" asp-controller="Enzyme" asp-action="SearchCellLines"><span class="link-text"> Download </span></a></li>
+
+                                        <li class="menu-item"><a class="item-link" asp-controller="Enzyme" asp-action="DeletedItems"><span class="link-text">View Deleted Items</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item has-sub">
+                                    <a class="item-link" href="#"><span class="link-icon icofont-test-tube"></span> <span class="link-text">Chemicals</span><span class="link-caret icofont-thin-right"></span></a>
+                                    <ul class="sub">
+                                        <li class="menu-item"><a class="item-link" asp-controller="Chemical" asp-action="Index"><span class="link-text">View </span></a></li>
+                                        <li class="menu-item"><a class="item-link" asp-controller="Chemical" asp-action="Create"><span class="link-text">Create </span></a></li>
+                                        <li class="menu-item"><a class="item-link" asp-controller="Chemical" asp-action="UploadExcel"><span class="link-text">Upload</span></a></li>
+                                        <li class="menu-item"><a class="item-link" asp-controller="Chemical" asp-action="SearchCellLines"><span class="link-text"> Download </span></a></li>
+
+                                        <li class="menu-item"><a class="item-link" asp-controller="Chemical" asp-action="DeletedItems"><span class="link-text">View Deleted Items</span></a></li>
+                                    </ul>
+                                </li>
+     
+                              @*  <li class="menu-item"><a class="item-link" href="#"><span class="link-icon icofont-prescription"></span> <span class="link-text">Protocol</span></a></li>*@
+
+                        
+
+
+                                <li class="menu-item"><span class="group-title">Records</span></li>
+                                <li class="menu-item has-sub">
+                                    <a class="item-link" href="#"><span class="link-icon icofont-record"></span> <span class="link-text">Manage Records</span> <span class="link-caret icofont-thin-right"></span></a>
+                                    <ul class="sub">
+
+                                        <li class="menu-item"><a class="item-link" href="#"><span class="link-text">Reports</span></a></li>
+                                        <li class="menu-item"><a class="item-link" asp-controller="AssignTask" asp-action="Index"><span class="link-text">Tasks</span></a></li>
+
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                    <br />
+
+                    @*    <div class="add-patient"><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add-patient"><span class="btn-icon icofont-plus me-2"></span> Add Patient</button></div>*@
+                    <div class="assistant-menu">
+                        <a class="link" asp-controller="User" asp-action="Profile">
+                            <span class="link-icon icofont-ui-settings"></span>Settings
+                        </a>
+                         <a class="link" href="#">
+                        <span class="link-icon icofont-ui-text-chat"></span>Chatbot</a>
+                        <a class="link" href="#">
+                            <span class="link-icon icofont-friendfeed"></span>Feedback
+                        </a>
+                    </div>
+                
+                </div>
+            </div>
+            <!-- end Vertical navbar -->
+            <main class="main-content">
+                <div class="app-loader"><i class="icofont-spinner-alt-4 rotate"></i></div>
+                <div class="main-content-wrap">
+                    @RenderBody()
+                </div>
+            </main>
+            <div class="app-footer">
+                <div class="footer-wrap">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12 col-md-6 d-none d-md-block">
+                            <ul class="page-breadcrumbs">
+                                <li class="item"><a asp-contoller="Home" asp-action="Index" class="link">Dashboards</a> <i class="separator icofont-thin-right"></i></li>
+                                <li class="item"><a asp-contoller="Home" asp-action="Index" class="link">Default</a> <i class="separator icofont-thin-right"></i></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6 text-end">
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-end"><span>Change background settings</span> <button class="no-style ms-2 settings-btn" data-bs-toggle="modal" data-bs-target="#settings"><span class="icon icofont-ui-settings text-primary"></span></button></div>
+                        </div>
+                    </div>
+                    <div class="footer-skeleton">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-6 d-none d-md-block">
+                                <ul class="page-breadcrumbs">
+                                    <li class="item bg-1 animated-bg"></li>
+                                    <li class="item bg animated-bg"></li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="info justify-content-center justify-content-md-end">
+                                    <div class="version bg animated-bg"></div>
+                                    <div class="settings animated-bg"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-overlay"></div>
+        </div>
+    </div>
+
+
+
+    @* <!-- Add patients modals -->
+    <div class="modal fade" id="settings" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+    <div class="modal-header">
+    <h5 class="modal-title">Application's settings</h5>
+    </div>
+    <div class="modal-body">
+    <form>
+    <div class="form-group">
+    <label>Layout</label>
+    <select class="selectpicker" title="Layout" id="layout">
+    <option value="horizontal-layout">Horizontal</option>
+    <option value="vertical-layout">Vertical</option>
+    </select>
+    </div>
+    <div class="form-group">
+    <label>Light/dark topbar</label>
+    <div class="form-check form-switch"><input class="form-check-input" type="checkbox" id="topbar"></div>
+    </div>
+    <div class="form-group">
+    <label>Light/dark sidebar</label>
+    <div class="form-check form-switch"><input class="form-check-input" type="checkbox" id="sidebar"></div>
+    </div>
+    <div class="form-group mb-0">
+    <label>Boxed/fullwidth mode</label>
+    <div class="form-check form-switch"><input class="form-check-input" type="checkbox" id="boxed" checked="checked"></div>
+    </div>
+    </form>
+    </div>
+    <div class="modal-footer d-block">
+    <div class="actions justify-content-between"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button> <button id="reset-to-default" type="button" class="btn btn-error">Reset to default</button></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- end Add patients modals -->*@
+    <script src="/assets/js/jquery-3.6.0.min.js"></script>
+    <script src="/assets/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="/assets/js/popper.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/jquery.typeahead.min.js"></script>
+    <script src="/assets/js/datatables.min.js"></script>
+    <script src="/assets/js/bootstrap-select.min.js"></script>
+    <script src="/assets/js/jquery.barrating.min.js"> </script>
+    <script src="/assets/js/Chart.min.js">   </script>
+    <script src="/assets/js/raphael-min.js"></script>
+    <script src="/assets/js/morris.min.js"> </script>
+    <script src="/assets/js/echarts.min.js"></script>
+    <script src="/assets/js/echarts-gl.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script>
+        $(document).ready(function () {
+            initNotices();
+        });
+
+        function initNotices() {
+            showNotification('@ViewBag.Message', 'success');
+            showNotification('@ViewBag.Failure', 'failure');
+        }
+
+        function showNotification(message, type) {
+            if (message && message.trim() !== '') {
+                const iconSuccess = '<i class="fas fa-check-circle"></i>';
+                const iconFailure = '<i class="fas fa-times-circle"></i>';
+
+                Toastify({
+                    text: message,
+                    duration: 3000,
+                    close: true,
+                    gravity: 'top', // Change the position as per your preference
+                    positionLeft: false,
+                    backgroundColor: type === 'success' ? 'linear-gradient(to right, #00b09b, #96c93d)' : '#ff6347',
+                    className: 'custom-toast',
+                    stopOnFocus: true,
+                    icon: type === 'success' ? iconSuccess : iconFailure,
+                }).showToast();
+            }
+        }
+    </script>
+</body>
+</html>
