@@ -204,6 +204,45 @@
 
                                         <li class="menu-item"><a class="item-link" href="#"><span class="link-text">Reports</span></a></li>
                                         <li class="menu-item"><a class="item-link" asp-controller="AssignTask" asp-action="Index"><span class="link-text">Tasks</span></a></li>
+@*                                        <li class="menu-item"><a class="item-link" asp-controller="EquipmentInventory" asp-action="Create"><span class="link-text">Equipment Inventory</span></a></li>
+*@                                        <li class="menu-item has-sub">
+                                            <a class="item-link" href="#"><span class="item-link"></span> <span class="link-text">Inventory</span><span class="link-caret icofont-thin-right"></span></a>
+                                            <ul class="sub">
+                                                <li class="menu-item"><a class="item-link" asp-controller="EquipmentInventory" asp-action="Index"><span class="link-text">View </span></a></li>
+                                                <li class="menu-item"><a class="item-link" asp-controller="EquipmentInventory" asp-action="Create"><span class="link-text">Create </span></a></li>
+                                                <li class="menu-item"><a class="item-link" asp-controller="EquipmentInventory" asp-action="UploadExcel"><span class="link-text">Upload</span></a></li>
+                                                <li class="menu-item"><a class="item-link" asp-controller="EquipmentInventory" asp-action="SearchCellLines"><span class="link-text"> Download </span></a></li>
+
+                                                <li class="menu-item"><a class="item-link" asp-controller="Chemical" asp-action="DeletedItems"><span class="link-text">View Deleted Items</span></a></li>
+                                            </ul>
+                                        </li>
+
+
+                                    </ul>
+                                </li>
+
+
+                                <li class="menu-item"><span class="group-title">Equipments</span></li>
+                                <li class="menu-item has-sub">
+                                    <a class="item-link" href="#"><span class="link-icon icofont-opencart"></span> <span class="link-text">Inventories</span> <span class="link-caret icofont-thin-right"></span></a>
+                                    <ul class="sub">
+
+                                        <li class="menu-item"><a class="item-link" asp-controller="EquipmentInventory" asp-action="Index"><span class="link-text">View </span></a></li>
+                                        <li class="menu-item"><a class="item-link" asp-controller="EquipmentInventory" asp-action="Create"><span class="link-text">Create </span></a></li>
+                                        <li class="menu-item"><a class="item-link" asp-controller="EquipmentInventory" asp-action="UploadExcel"><span class="link-text">Upload</span></a></li>
+@*                                        <li class="menu-item"><a class="item-link" asp-controller="EquipmentInventory" asp-action="SearchCellLines"><span class="link-text"> Download </span></a></li>*@
+
+                                    </ul>
+                                </li>
+
+                                <li class="menu-item has-sub">
+                                    <a class="item-link" href="#"><span class="link-icon icofont-settings"></span> <span class="link-text">Maintenances</span> <span class="link-caret icofont-thin-right"></span></a>
+                                    <ul class="sub">
+
+                                        <li class="menu-item"><a class="item-link" asp-controller="Maintenance" asp-action="Index"><span class="link-text">View </span></a></li>
+                                        <li class="menu-item"><a class="item-link" asp-controller="Maintenance" asp-action="Create"><span class="link-text">Create </span></a></li>
+                                        <li class="menu-item"><a class="item-link" asp-controller="Maintenance" asp-action="UploadExcel"><span class="link-text">Upload</span></a></li>
+                                        @*                                        <li class="menu-item"><a class="item-link" asp-controller="EquipmentInventory" asp-action="SearchCellLines"><span class="link-text"> Download </span></a></li>*@
 
                                     </ul>
                                 </li>
@@ -352,5 +391,7 @@
             }
         }
     </script>
+    @RenderSection("scripts", required: false)
+
 </body>
 </html>
