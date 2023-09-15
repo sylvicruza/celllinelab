@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Cell_line_laboratory.Migrations
 {
     [DbContext(typeof(Cell_line_laboratoryContext))]
-    [Migration("20230912202041_updatedDB")]
+    [Migration("20230914211320_updatedDB")]
     partial class updatedDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -268,14 +268,15 @@ namespace Cell_line_laboratory.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<double>("Amount")
-                        .HasColumnType("float");
+                    b.Property<decimal>("Amount")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("CreatedBy")
-                        .HasColumnType("int");
+                    b.Property<string>("CreatedBy")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("LastMaintenanceDate")
                         .HasColumnType("datetime2");
@@ -296,9 +297,8 @@ namespace Cell_line_laboratory.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Quantity")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
 
                     b.Property<string>("SerialNumber")
                         .IsRequired()
@@ -329,8 +329,9 @@ namespace Cell_line_laboratory.Migrations
                     b.Property<int>("EquipmentId")
                         .HasColumnType("int");
 
-                    b.Property<int>("MaintainedById")
-                        .HasColumnType("int");
+                    b.Property<string>("MaintainedById")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("NextMaintenance")
                         .HasColumnType("datetime2");
@@ -494,16 +495,16 @@ namespace Cell_line_laboratory.Migrations
                         {
                             Id = 1,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "56ccd3d3-3d6a-4f0d-8cb8-dc02077b55be",
-                            CreatedAt = new DateTime(2023, 9, 12, 21, 20, 41, 260, DateTimeKind.Local).AddTicks(4876),
+                            ConcurrencyStamp = "16182008-8586-4eba-9624-91dd37203a11",
+                            CreatedAt = new DateTime(2023, 9, 14, 22, 13, 20, 31, DateTimeKind.Local).AddTicks(1485),
                             Email = "superadmin@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             Name = "John Doe",
-                            Password = "AQAAAAEAACcQAAAAEMqUWfHhMzTCi7mQB7SgrJ4Q5u8okjmzMfWigl7XGs2KCf4n3o7VS5fiXM3uFzpuhQ==",
+                            Password = "AQAAAAEAACcQAAAAEO47HxwcWW00VOevc46c4hbj2qczskMqJOxfoLm+QKxJHZWYjI5vi1LlirWCXNBVKw==",
                             PhoneNumberConfirmed = false,
                             Role = "SuperUser",
-                            SecurityStamp = "3f8be96b-4f53-4556-97a1-c0a91395c927",
+                            SecurityStamp = "f7d43469-be72-4782-a821-53a02432f7f8",
                             Status = "Active",
                             TwoFactorEnabled = false,
                             UserType = "SuperAdmin"

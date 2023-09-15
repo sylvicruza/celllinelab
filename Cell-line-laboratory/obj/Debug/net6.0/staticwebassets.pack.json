@@ -625,6 +625,10 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\uploads\\EquipmentInventory_template.xlsx",
+      "PackagePath": "staticwebassets\\uploads\\EquipmentInventory_template.xlsx"
+    },
+    {
       "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\uploads\\SampleCellLineExcelFile.xlsx",
       "PackagePath": "staticwebassets\\uploads\\SampleCellLineExcelFile.xlsx"
     },

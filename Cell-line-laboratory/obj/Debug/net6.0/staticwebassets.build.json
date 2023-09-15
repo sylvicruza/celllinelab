@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wb0Agpv3lvKdb6YiTTa+qH2pCNKUL+mefrJd7Xv2NSY=",
+  "Hash": "824+OG0PYVu7eBwviLqvoQ2z111tTmh60TV1SpWC9zE=",
   "Source": "Cell-line-laboratory",
   "BasePath": "_content/Cell-line-laboratory",
   "Mode": "Default",
@@ -2684,6 +2684,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\uploads\\EquipmentInventory_template.xlsx",
+      "SourceId": "Cell-line-laboratory",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\",
+      "BasePath": "_content/Cell-line-laboratory",
+      "RelativePath": "uploads/EquipmentInventory_template.xlsx",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\EquipmentInventory_template.xlsx"
     },
     {
       "Identity": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\uploads\\SampleCellLineExcelFile.xlsx",

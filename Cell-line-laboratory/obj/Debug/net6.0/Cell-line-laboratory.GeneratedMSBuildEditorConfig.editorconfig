@@ -172,6 +172,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBtZW50SW52ZW50b3J5XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/EquipmentInventory/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBtZW50SW52ZW50b3J5XFNlYXJjaC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/EquipmentInventory/SearchResults.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBtZW50SW52ZW50b3J5XFNlYXJjaFJlc3VsdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/EquipmentInventory/UploadExcel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBtZW50SW52ZW50b3J5XFVwbG9hZEV4Y2VsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -190,6 +198,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Home/SignIn.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaWduSW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Maintenance/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbnRlbmFuY2VcU2VhcmNoLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Plasmid/Create.cshtml]

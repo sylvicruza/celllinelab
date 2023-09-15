@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Cell_line_laboratory.Migrations
 {
-    public partial class AddEquipmentInventoryAndMaintenanceTables : Migration
+    public partial class updatedDB : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -33,19 +33,19 @@ namespace Cell_line_laboratory.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Product = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ProductCode = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Product = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ProductCode = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ProductName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ProductDescription = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Vendor = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ProductDescription = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Vendor = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     SerialNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Quantity = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Quantity = table.Column<int>(type: "int", nullable: false),
                     LastMaintenanceDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     NextMaintenanceDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Amount = table.Column<double>(type: "float", nullable: false),
+                    Amount = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    CreatedBy = table.Column<int>(type: "int", nullable: false)
+                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -112,7 +112,7 @@ namespace Cell_line_laboratory.Migrations
                     Note = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Date = table.Column<DateTime>(type: "datetime2", nullable: false),
                     NextMaintenance = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    MaintainedById = table.Column<int>(type: "int", nullable: false)
+                    MaintainedById = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -265,7 +265,7 @@ namespace Cell_line_laboratory.Migrations
             migrationBuilder.InsertData(
                 table: "User",
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "CreatedAt", "DeletedAt", "DeletedBy", "Email", "EmailConfirmed", "LastUpdatedAt", "LockoutEnabled", "LockoutEnd", "Name", "NormalizedEmail", "NormalizedUserName", "Password", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "Role", "SecurityStamp", "Status", "TwoFactorEnabled", "UserName", "UserType" },
-                values: new object[] { 1, 0, "b7ee0fd0-82b9-454b-aac4-2108f173f65f", new DateTime(2023, 9, 12, 12, 49, 44, 150, DateTimeKind.Local).AddTicks(8081), null, null, "superadmin@gmail.com", false, null, false, null, "John Doe", null, null, "AQAAAAEAACcQAAAAEAFbPan5EnFkxBmbqc7DNhbuQU444c8k/NFZEEQKqGjufC0ksu9RS9JKbW+aPvEGhQ==", null, null, false, "SuperUser", "742fafff-74fd-426d-b0a1-3cfb13d5ee1f", "Active", false, null, "SuperAdmin" });
+                values: new object[] { 1, 0, "16182008-8586-4eba-9624-91dd37203a11", new DateTime(2023, 9, 14, 22, 13, 20, 31, DateTimeKind.Local).AddTicks(1485), null, null, "superadmin@gmail.com", false, null, false, null, "John Doe", null, null, "AQAAAAEAACcQAAAAEO47HxwcWW00VOevc46c4hbj2qczskMqJOxfoLm+QKxJHZWYjI5vi1LlirWCXNBVKw==", null, null, false, "SuperUser", "f7d43469-be72-4782-a821-53a02432f7f8", "Active", false, null, "SuperAdmin" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AssignTask_UserId",

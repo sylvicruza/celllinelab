@@ -327,8 +327,9 @@ namespace Cell_line_laboratory.Migrations
                     b.Property<int>("EquipmentId")
                         .HasColumnType("int");
 
-                    b.Property<int>("MaintainedById")
-                        .HasColumnType("int");
+                    b.Property<string>("MaintainedById")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("NextMaintenance")
                         .HasColumnType("datetime2");
@@ -492,16 +493,16 @@ namespace Cell_line_laboratory.Migrations
                         {
                             Id = 1,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "44d0abd4-ec71-439d-9b85-3adc429bcb1a",
-                            CreatedAt = new DateTime(2023, 9, 13, 2, 31, 25, 568, DateTimeKind.Local).AddTicks(564),
+                            ConcurrencyStamp = "16182008-8586-4eba-9624-91dd37203a11",
+                            CreatedAt = new DateTime(2023, 9, 14, 22, 13, 20, 31, DateTimeKind.Local).AddTicks(1485),
                             Email = "superadmin@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             Name = "John Doe",
-                            Password = "AQAAAAEAACcQAAAAEAJHiW63qHzBPZ7tupePFeUW7gjiBQaroY2QQyyRJvJ3aKd42pFaTxJPeZ5jaPyElg==",
+                            Password = "AQAAAAEAACcQAAAAEO47HxwcWW00VOevc46c4hbj2qczskMqJOxfoLm+QKxJHZWYjI5vi1LlirWCXNBVKw==",
                             PhoneNumberConfirmed = false,
                             Role = "SuperUser",
-                            SecurityStamp = "1667e633-a312-4740-873d-89666b21dd3f",
+                            SecurityStamp = "f7d43469-be72-4782-a821-53a02432f7f8",
                             Status = "Active",
                             TwoFactorEnabled = false,
                             UserType = "SuperAdmin"
