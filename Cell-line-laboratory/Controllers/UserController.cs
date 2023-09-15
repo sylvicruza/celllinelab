@@ -11,6 +11,7 @@ using Cell_line_laboratory.Services.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using Cell_line_laboratory.Models;
 using Cell_line_laboratory.Services;
+using Cell_line_laboratory.Utils;
 
 namespace Cell_line_laboratory.Controllers
 {
@@ -73,6 +74,13 @@ namespace Cell_line_laboratory.Controllers
             return View(user);
         }
 
+        public IActionResult SendFeedback()
+        {
+            var user = GetCurrentUser().Result;
+            Console.WriteLine(user);
+            return View(user);
+        }
+
         // GET: User/Create
         public IActionResult Create()
         {
@@ -87,20 +95,20 @@ namespace Cell_line_laboratory.Controllers
         public async Task<IActionResult> Create([Bind("Id,Name,Email,Password,Role,UserType,Status,CreatedAt,LastUpdatedAt,DeletedAt,DeletedBy")] User user)
         {
 
-           /* if (ModelState.IsValid)
-            {*/
-                try
-                {
-                    await userService.CreateUser(user);
-                    var message = "User created successfully ";
-                    return RedirectToAction("Index", "User", new { response = message });
-                }
-                catch (Exception ex)
-                {
-                    var error1 = "Error occur creating user \n" + ex.Message;
-                    return RedirectToAction("Index", "User", new { response = error1 });
+            /* if (ModelState.IsValid)
+             {*/
+            try
+            {
+                await userService.CreateUser(user);
+                var message = "User created successfully ";
+                return RedirectToAction("Index", "User", new { response = message });
+            }
+            catch (Exception ex)
+            {
+                var error1 = "Error occur creating user \n" + ex.Message;
+                return RedirectToAction("Index", "User", new { response = error1 });
 
-                }
+            }
             /*}
             var error2 = "Failed to create user error " + ModelState.ErrorCount;
             return RedirectToAction("Index", "User", new { response = error2 });*/
@@ -273,5 +281,35 @@ namespace Cell_line_laboratory.Controllers
         }
 
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> SendFeedback(string email, string comment)
+        {
+            try
+            {
+                if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(comment))
+                {
+                    ModelState.AddModelError(string.Empty, "Email or comment not provided.");
+                    return View(); // Return the view to show the error message
+                }
+
+                // Assuming EmailSender.SendEmailAsync returns a Task
+                await EmailSender.SendEmailAsync("morenikejiolatunbosun66@gmail.com", "App User Feedback", comment);
+
+                // Feedback received
+                TempData["SuccessMessage"] = "Feedback sent, thank you!";
+                return RedirectToAction("SendFeedback");
+            }
+            catch (Exception ex)
+            {
+                TempData["ErrorMessage"] = "An error occurred: " + ex.Message;
+                return View(); // Return the view to show the error message
+            }
+        }
+
+
+     
+
     }
+
 }

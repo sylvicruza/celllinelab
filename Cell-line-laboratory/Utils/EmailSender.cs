@@ -16,7 +16,7 @@ namespace Cell_line_laboratory.Utils
 
         public static async Task SendEmailAsync(string to, string subject, string body)
         {
-            var fromAddress = new MailAddress(_smtpUsername, "CellLine Notification");
+            var fromAddress = new MailAddress(_smtpUsername, "Cell-Division Notification");
             var toAddress = new MailAddress(to);
             var smtp = new SmtpClient
             {

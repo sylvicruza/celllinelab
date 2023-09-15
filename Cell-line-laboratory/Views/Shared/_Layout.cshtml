@@ -95,9 +95,9 @@
                             <div class="dropdown-menu dropdown-menu-right dropdown-menu-w-180">
                                 <ul class="list">
                               
-                                    <li><a href="user-profile.html" class="align-items-center"><span class="icon icofont-ui-user"></span> User profile</a></li>
+                                    <li><a asp-controller="User" asp-action="Profile" class="align-items-center"><span class="icon icofont-ui-user"></span> User profile</a></li>
 
-                                    <li><a href="index.html#" class="align-items-center"><span class="icon icofont-ui-settings"></span> Settings</a></li>
+                                    <li><a asp-controller="User" asp-action="Profile" class="align-items-center"><span class="icon icofont-ui-settings"></span> Settings</a></li>
                                     <li><a asp-controller="Home" asp-action="Logout" class="align-items-center"><span class="icon icofont-logout"></span> Log Out</a></li>
                                 </ul>
                             </div>
@@ -257,10 +257,10 @@
                         <a class="link" asp-controller="User" asp-action="Profile">
                             <span class="link-icon icofont-ui-settings"></span>Settings
                         </a>
-                         <a class="link" href="#">
-                        <span class="link-icon icofont-ui-text-chat"></span>Chatbot</a>
-                        <a class="link" href="#">
-                            <span class="link-icon icofont-friendfeed"></span>Feedback
+                       @*  <a class="link" href="#">
+                        <span class="link-icon icofont-ui-text-chat"></span>Chatbot</a>*@
+                        <a class="link" asp-controller="User" asp-action="SendFeedback">
+                            <span class="link-icon icofont-ui-text-chat"></span>Send Feedback
                         </a>
                     </div>
                 
