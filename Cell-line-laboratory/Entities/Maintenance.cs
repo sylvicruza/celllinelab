@@ -10,7 +10,7 @@
         public DateTime NextMaintenance { get; set; }
 
         // Foreign key for the user who performed the maintenance
-        public int MaintainedById { get; set; }
+        public string MaintainedById { get; set; }
 
 
         // Navigation property for EquipmentInventory

@@ -338,6 +338,67 @@ namespace Cell_line_laboratory.Controllers
             return RedirectToAction("UploadExcel");
         }
 
+        public IActionResult Search()
+        {
+            return View();
+        }
+
+        public IActionResult LSearch(string searchQuery)
+        {
+            var results = _context.EquipmentInventory
+                .Where(e => e.ProductName.Contains(searchQuery) ||
+                            e.ProductCode.Contains(searchQuery) ||
+                            e.SerialNumber.Contains(searchQuery))
+                .Select(e => new
+                {
+                    e.Id,
+                    e.Product,
+                    e.ProductName,
+                    e.ProductCode,
+                    e.ProductDescription,
+                    e.Vendor,
+                    e.SerialNumber,
+                    e.Quantity,
+                    e.Amount,
+                    e.LastMaintenanceDate,
+                    e.UpdatedAt,
+                    e.CreatedAt,
+                    e.NextMaintenanceDate,
+                    e.CreatedBy
+                })
+                .ToList();
+
+            return Json(results);
+        }
+
+        [HttpPost]
+        public JsonResult UpdateUpdatedAt(int equipmentId)
+        {
+            try
+            {
+                var equipment = _context.EquipmentInventory.Find(equipmentId);
+                if (equipment != null)
+                {
+                    equipment.UpdatedAt = DateTime.Now;
+                    _context.SaveChanges();
+                    return Json(new { success = true, message = "Updated Successfully" });
+                }
+                else
+                {
+                    return Json(new { success = false, message = "Equipment not found" });
+                }
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, message = ex.Message });
+            }
+        }
+
+
+
+
+
+
 
     }
 }
