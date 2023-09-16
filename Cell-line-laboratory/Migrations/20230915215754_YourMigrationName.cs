@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Cell_line_laboratory.Migrations
 {
-    public partial class updatedDB : Migration
+    public partial class YourMigrationName : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -28,28 +28,16 @@ namespace Cell_line_laboratory.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "EquipmentInventory",
+                name: "Products",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Product = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ProductCode = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ProductName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ProductDescription = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Vendor = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    SerialNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Quantity = table.Column<int>(type: "int", nullable: false),
-                    LastMaintenanceDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    NextMaintenanceDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Amount = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    ProductName = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_EquipmentInventory", x => x.Id);
+                    table.PrimaryKey("PK_Products", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -102,26 +90,66 @@ namespace Cell_line_laboratory.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Maintenances",
+                name: "EquipmentInventory",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    EquipmentId = table.Column<int>(type: "int", nullable: false),
+                    ProductId = table.Column<int>(type: "int", nullable: false),
+                    ProductCode = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ProductName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ProductDescription = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Vendor = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    SerialNumber = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Quantity = table.Column<int>(type: "int", nullable: false),
-                    Note = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Date = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    NextMaintenance = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    MaintainedById = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    LastMaintenanceDate = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    NextMaintenanceDate = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    Amount = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Maintenances", x => x.Id);
+                    table.PrimaryKey("PK_EquipmentInventory", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Maintenances_EquipmentInventory_EquipmentId",
-                        column: x => x.EquipmentId,
-                        principalTable: "EquipmentInventory",
-                        principalColumn: "Id");
+                        name: "FK_EquipmentInventory_Products_ProductId",
+                        column: x => x.ProductId,
+                        principalTable: "Products",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "EquipmentInventoryModel",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    ProductId = table.Column<int>(type: "int", nullable: false),
+                    ProductName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ProductCode = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ProductDescription = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Vendor = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    SerialNumber = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Quantity = table.Column<int>(type: "int", nullable: false),
+                    Amount = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    LastMaintenanceDate = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    NextMaintenanceDate = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    AvailableProducts = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_EquipmentInventoryModel", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_EquipmentInventoryModel_Products_ProductId",
+                        column: x => x.ProductId,
+                        principalTable: "Products",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -262,10 +290,33 @@ namespace Cell_line_laboratory.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "Maintenances",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    EquipmentId = table.Column<int>(type: "int", nullable: false),
+                    Quantity = table.Column<int>(type: "int", nullable: false),
+                    Note = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Date = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    NextMaintenance = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    MaintainedById = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Maintenances", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Maintenances_EquipmentInventory_EquipmentId",
+                        column: x => x.EquipmentId,
+                        principalTable: "EquipmentInventory",
+                        principalColumn: "Id");
+                });
+
             migrationBuilder.InsertData(
                 table: "User",
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "CreatedAt", "DeletedAt", "DeletedBy", "Email", "EmailConfirmed", "LastUpdatedAt", "LockoutEnabled", "LockoutEnd", "Name", "NormalizedEmail", "NormalizedUserName", "Password", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "Role", "SecurityStamp", "Status", "TwoFactorEnabled", "UserName", "UserType" },
-                values: new object[] { 1, 0, "16182008-8586-4eba-9624-91dd37203a11", new DateTime(2023, 9, 14, 22, 13, 20, 31, DateTimeKind.Local).AddTicks(1485), null, null, "superadmin@gmail.com", false, null, false, null, "John Doe", null, null, "AQAAAAEAACcQAAAAEO47HxwcWW00VOevc46c4hbj2qczskMqJOxfoLm+QKxJHZWYjI5vi1LlirWCXNBVKw==", null, null, false, "SuperUser", "f7d43469-be72-4782-a821-53a02432f7f8", "Active", false, null, "SuperAdmin" });
+                values: new object[] { 1, 0, "131b24b4-6e09-47c1-b5f6-06c788522104", new DateTime(2023, 9, 15, 22, 57, 53, 952, DateTimeKind.Local).AddTicks(1186), null, null, "superadmin@gmail.com", false, null, false, null, "John Doe", null, null, "AQAAAAEAACcQAAAAEN6gTO9gyOfUeyRVQx5exjjUIS98L+wbP449HfbmpslSjbKhYjDSXGckN92frkuA0w==", null, null, false, "SuperUser", "53c4036e-31cb-47ec-853c-60c8750ae55d", "Active", false, null, "SuperAdmin" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AssignTask_UserId",
@@ -286,6 +337,16 @@ namespace Cell_line_laboratory.Migrations
                 name: "IX_Enzyme_UserId",
                 table: "Enzyme",
                 column: "UserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_EquipmentInventory_ProductId",
+                table: "EquipmentInventory",
+                column: "ProductId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_EquipmentInventoryModel_ProductId",
+                table: "EquipmentInventoryModel",
+                column: "ProductId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Maintenances_EquipmentId",
@@ -321,6 +382,9 @@ namespace Cell_line_laboratory.Migrations
                 name: "Enzyme");
 
             migrationBuilder.DropTable(
+                name: "EquipmentInventoryModel");
+
+            migrationBuilder.DropTable(
                 name: "Maintenances");
 
             migrationBuilder.DropTable(
@@ -334,6 +398,9 @@ namespace Cell_line_laboratory.Migrations
 
             migrationBuilder.DropTable(
                 name: "User");
+
+            migrationBuilder.DropTable(
+                name: "Products");
         }
     }
 }

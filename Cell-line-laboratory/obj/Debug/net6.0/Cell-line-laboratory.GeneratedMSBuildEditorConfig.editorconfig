@@ -9,281 +9,289 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Cell_line_laboratory
 build_property.RootNamespace = Cell_line_laboratory
-build_property.ProjectDir = C:\Users\Bhoyee-pc\Downloads\celllinelab-main\celllinelab-main\Cell-line-laboratory\
+build_property.ProjectDir = C:\Users\Bhoyee-pc\Downloads\celllinelab-main1\celllinelab-main\celllinelab-main\Cell-line-laboratory\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Bhoyee-pc\Downloads\celllinelab-main\celllinelab-main\Cell-line-laboratory
+build_property.MSBuildProjectDirectory = C:\Users\Bhoyee-pc\Downloads\celllinelab-main1\celllinelab-main\celllinelab-main\Cell-line-laboratory
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/AssignTask/Create.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/AssignTask/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaWduVGFza1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/AssignTask/Delete.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/AssignTask/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaWduVGFza1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/AssignTask/Details.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/AssignTask/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaWduVGFza1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/AssignTask/Edit.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/AssignTask/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaWduVGFza1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/AssignTask/Index.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/AssignTask/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaWduVGFza1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/CellLine/Create.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/CellLine/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VsbExpbmVcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/CellLine/DeletedItems.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/CellLine/DeletedItems.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VsbExpbmVcRGVsZXRlZEl0ZW1zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/CellLine/Details.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/CellLine/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VsbExpbmVcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/CellLine/Edit.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/CellLine/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VsbExpbmVcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/CellLine/EditUsage.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/CellLine/EditUsage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VsbExpbmVcRWRpdFVzYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/CellLine/Index.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/CellLine/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VsbExpbmVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/CellLine/Search.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/CellLine/Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VsbExpbmVcU2VhcmNoLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/CellLine/SearchCellLines.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/CellLine/SearchCellLines.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VsbExpbmVcU2VhcmNoQ2VsbExpbmVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/CellLine/UploadExcel.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/CellLine/UploadExcel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VsbExpbmVcVXBsb2FkRXhjZWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Chemical/Create.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Chemical/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlbWljYWxcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Chemical/DeletedItems.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Chemical/DeletedItems.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlbWljYWxcRGVsZXRlZEl0ZW1zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Chemical/Details.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Chemical/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlbWljYWxcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Chemical/Edit.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Chemical/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlbWljYWxcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Chemical/EditUsage.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Chemical/EditUsage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlbWljYWxcRWRpdFVzYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Chemical/Index.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Chemical/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlbWljYWxcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Chemical/Search.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Chemical/Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlbWljYWxcU2VhcmNoLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Chemical/SearchCellLines.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Chemical/SearchCellLines.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlbWljYWxcU2VhcmNoQ2VsbExpbmVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Chemical/UploadExcel.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Chemical/UploadExcel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlbWljYWxcVXBsb2FkRXhjZWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/DailyUsage/EditUsage.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/DailyUsage/EditUsage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFpbHlVc2FnZVxFZGl0VXNhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/DailyUsage/Search.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/DailyUsage/Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFpbHlVc2FnZVxTZWFyY2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Enzyme/Create.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Enzyme/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW56eW1lXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Enzyme/DeletedItems.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Enzyme/DeletedItems.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW56eW1lXERlbGV0ZWRJdGVtcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Enzyme/Details.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Enzyme/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW56eW1lXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Enzyme/Edit.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Enzyme/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW56eW1lXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Enzyme/EditUsage.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Enzyme/EditUsage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW56eW1lXEVkaXRVc2FnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Enzyme/Index.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Enzyme/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW56eW1lXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Enzyme/Search.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Enzyme/Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW56eW1lXFNlYXJjaC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Enzyme/SearchCellLines.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Enzyme/SearchCellLines.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW56eW1lXFNlYXJjaENlbGxMaW5lcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Enzyme/UploadExcel.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Enzyme/UploadExcel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW56eW1lXFVwbG9hZEV4Y2VsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/EquipmentInventory/Create.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/EquipmentInventory/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBtZW50SW52ZW50b3J5XENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/EquipmentInventory/Delete.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/EquipmentInventory/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBtZW50SW52ZW50b3J5XERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/EquipmentInventory/Details.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/EquipmentInventory/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBtZW50SW52ZW50b3J5XERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/EquipmentInventory/Edit.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/EquipmentInventory/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBtZW50SW52ZW50b3J5XEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/EquipmentInventory/Index.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/EquipmentInventory/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBtZW50SW52ZW50b3J5XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/EquipmentInventory/Search.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/EquipmentInventory/NextMaintenanceDateSet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBtZW50SW52ZW50b3J5XE5leHRNYWludGVuYW5jZURhdGVTZXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/EquipmentInventory/Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBtZW50SW52ZW50b3J5XFNlYXJjaC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/EquipmentInventory/SearchResults.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/EquipmentInventory/SearchResults.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBtZW50SW52ZW50b3J5XFNlYXJjaFJlc3VsdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/EquipmentInventory/UploadExcel.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/EquipmentInventory/UploadExcel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBtZW50SW52ZW50b3J5XFVwbG9hZEV4Y2VsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Home/ForgotPassword.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Home/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Home/Index.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Home/LandingPage.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Home/LandingPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMYW5kaW5nUGFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Home/SignIn.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Home/SignIn.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaWduSW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Maintenance/Search.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Maintenance/Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbnRlbmFuY2VcU2VhcmNoLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Plasmid/Create.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Plasmid/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhc21pZFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Plasmid/DeletedItems.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Plasmid/DeletedItems.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhc21pZFxEZWxldGVkSXRlbXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Plasmid/Details.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Plasmid/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhc21pZFxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Plasmid/Edit.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Plasmid/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhc21pZFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Plasmid/EditUsage.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Plasmid/EditUsage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhc21pZFxFZGl0VXNhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Plasmid/Index.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Plasmid/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhc21pZFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Plasmid/Search.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Plasmid/Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhc21pZFxTZWFyY2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Plasmid/SearchCellLines.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Plasmid/SearchCellLines.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhc21pZFxTZWFyY2hDZWxsTGluZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Plasmid/UploadExcel.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Plasmid/UploadExcel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhc21pZFxVcGxvYWRFeGNlbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Shared/Error.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Products/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/User/Create.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/User/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/User/Delete.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/User/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/User/Details.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/User/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/User/Edit.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/User/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/User/Index.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/User/Profile.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/User/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/User/_CreateUserModal.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/User/_CreateUserModal.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxfQ3JlYXRlVXNlck1vZGFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/_ViewImports.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/_ViewStart.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bhoyee-pc/Downloads/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Shared/_Layout.cshtml]
+[C:/Users/Bhoyee-pc/Downloads/celllinelab-main1/celllinelab-main/celllinelab-main/Cell-line-laboratory/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-uy3jjntvpl

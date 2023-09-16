@@ -108,8 +108,14 @@
             </div>
             <div class="mb-3">
                 <label for="nextMaintenance" class="form-label">Next Maintenance</label>
-                <input type="date" class="form-control" id="nextMaintenance" name="nextMaintenance" value="@DateTime.Now.AddDays(7).ToString("yyyy-MM-dd")" required>
+                <input type="date" class="form-control" id="nextMaintenance" name="nextMaintenance" value="" >
             </div>
+
+
+@*            <div class="mb-3">
+                <label for="nextMaintenance" class="form-label">Next Maintenance</label>
+                <input type="date" class="form-control" id="nextMaintenance" name="nextMaintenance" value="@DateTime.Now.AddDays(7).ToString("yyyy-MM-dd")" required>
+            </div>*@
         </div>
 
     <input type="hidden" id="maintainedBy" name="maintainedBy" value="@User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Name)?.Value" />
@@ -122,7 +128,10 @@
 
 @section Scripts {
     <script>
+
         $(document).ready(function () {
+            // Get the NextMaintenance value from the hidden input
+            var nextMaintenance = $('#nextMaintenanceValue').val();
 
             function formatDate(dateString) {
                 const date = new Date(dateString);
@@ -166,8 +175,19 @@
                 });
             }
 
-
-
+            function updateUpdatedAt(equipmentId) {
+                $.ajax({
+                    url: '/EquipmentInventory/UpdateUpdatedAt',
+                    type: 'POST',
+                    data: { equipmentId: equipmentId },
+                    success: function (data) {
+                        console.log('UpdatedAt column updated successfully');
+                    },
+                    error: function (xhr, textStatus, errorThrown) {
+                        console.log(xhr.responseText);
+                    }
+                });
+            }
 
             $('#searchQuery').on('input', function () {
                 var searchQuery = $(this).val();
@@ -255,6 +275,10 @@
                     // Load maintenance history
                     loadMaintenanceHistory(equipmentId);
 
+                    // Set Next Maintenance value from equipment details
+                    var nextMaintenanceFromDetails = formatDate(equipmentData['nextmaintenancedate']);
+                    $('#nextMaintenance').val(nextMaintenanceFromDetails);
+
                     // Show the "Create Maintenance" form
                     $('#createMaintenanceContainer').removeClass('hidden');
                 }
@@ -263,10 +287,11 @@
 
             // Existing code...
 
-
-            // Existing code...
             $('#createMaintenanceForm').on('submit', function (e) {
                 e.preventDefault();
+                console.log("Form submitted");
+                var nextMaintenanceFromDetails = $('#nextMaintenance').val();
+                console.log(nextMaintenanceFromDetails);
 
                 var equipmentId = $('#createMaintenanceForm #EquipmentId').val();
                 var quantity = $('#createMaintenanceForm #quantity').val();
@@ -285,11 +310,14 @@
                         quantity: quantity,
                         note: note,
                         date: date,
-                        nextMaintenance: nextMaintenance,
+                        nextMaintenance: nextMaintenanceFromDetails,  // Use the value from the equipment details
                         maintainedBy: maintainedBy
                     }),
                     success: function (data) {
                         if (data.success) {
+                            // Clear the form
+                            $('#createMaintenanceForm')[0].reset();
+
                             // Update the UpdatedAt column in EquipmentInventory table
                             $.ajax({
                                 url: '/EquipmentInventory/UpdateUpdatedAt',
@@ -302,14 +330,14 @@
                                     if (data.maintenanceHistory != null && data.maintenanceHistory.length > 0) {
                                         data.maintenanceHistory.forEach(function (maintenance, index) {
                                             var maintenanceInfo = `
-                                        <tr>
-                                            <td>${index + 1}</td>
-                                            <td>${maintenance.quantity}</td>
-                                            <td>${maintenance.note}</td>
-                                            <td>${formatDate(maintenance.date)}</td>
-                                            <td>${formatDate(maintenance.nextMaintenance)}</td>
-                                            <td>${maintenance.maintainedById}</td>
-                                        </tr>
+                                            <tr>
+                                                <td>${index + 1}</td>
+                                                <td>${maintenance.quantity}</td>
+                                                <td>${maintenance.note}</td>
+                                                <td>${formatDate(maintenance.date)}</td>
+                                                <td>${formatDate(maintenance.nextMaintenance)}</td>
+                                                <td>${maintenance.maintainedById}</td>
+                                            </tr>
                                         `;
                                             maintenanceHistoryTable.find('tbody').append(maintenanceInfo);
                                         });
@@ -322,7 +350,7 @@
                                 }
                             });
                         } else {
-                            console.error(data.message); // Log error message if creation failed
+                            console.error(data.message);
                         }
                     },
                     error: function (xhr, textStatus, errorThrown) {
@@ -330,6 +358,9 @@
                     }
                 });
             });
+
+            // Existing code...
+
 
 
 
@@ -339,8 +370,6 @@
 
 
         });
-
-
        
     </script>
 }

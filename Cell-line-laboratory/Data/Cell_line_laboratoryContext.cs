@@ -23,6 +23,9 @@ namespace Cell_line_laboratory.Data
         public DbSet<EquipmentInventory> EquipmentInventory { get; set; }
         public DbSet<Maintenance> Maintenances { get; set; }
 
+        public DbSet<Product> Products { get; set; }
+
+
 
         public DbSet<CellLine> CellLine { get; set; } = default!;
         public DbSet<DailyUsage> DailyUsage { get; set; }
@@ -53,6 +56,11 @@ namespace Cell_line_laboratory.Data
                 .WithMany(e => e.Maintenances)
                 .HasForeignKey(m => m.EquipmentId)
                 .OnDelete(DeleteBehavior.NoAction);
+
+            modelBuilder.Entity<EquipmentInventoryModel>()
+                .HasOne(e => e.Product)
+                .WithMany()
+                .HasForeignKey(e => e.ProductId);
 
         }
 

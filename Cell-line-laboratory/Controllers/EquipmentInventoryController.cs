@@ -6,6 +6,8 @@ using System.Security.Claims;
 using Cell_line_laboratory.Entities;
 using Microsoft.AspNetCore.Authorization;
 using OfficeOpenXml;
+using Microsoft.AspNetCore.Mvc.Rendering;
+
 
 namespace Cell_line_laboratory.Controllers
 {
@@ -77,7 +79,7 @@ namespace Cell_line_laboratory.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize]
-        public IActionResult Create(EquipmentInventoryModel viewModel)
+        public IActionResult Create(EquipmentInventoryModel viewModel, int SelectedProductId)
         {
             if (_context.EquipmentInventory.Any(e => e.ProductName == viewModel.ProductName))
             {
@@ -106,7 +108,7 @@ namespace Cell_line_laboratory.Controllers
 
             var eInventoryEntity = new Entities.EquipmentInventory
             {
-                Product = viewModel.Product,
+                ProductId = SelectedProductId,
                 ProductName = viewModel.ProductName,
                 ProductCode = viewModel.ProductCode,
                 ProductDescription = viewModel.ProductDescription,
@@ -272,7 +274,7 @@ namespace Cell_line_laboratory.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> UploadExcel(IFormFile file)
+        public async Task<IActionResult> UploadExcel(IFormFile file, int SelectedProductId)
         {
             if (file == null || file.Length == 0)
             {
@@ -305,6 +307,7 @@ namespace Cell_line_laboratory.Controllers
                     {
                         EquipmentInventory equipment = new EquipmentInventory
                         {
+                            ProductId = SelectedProductId,
                             ProductName = worksheet.Cells[row, 1].Value.ToString(),
                             ProductCode = worksheet.Cells[row, 2].Value.ToString(),
                             ProductDescription = worksheet.Cells[row, 3].Value.ToString(),
@@ -394,6 +397,146 @@ namespace Cell_line_laboratory.Controllers
             }
         }
 
+
+        // GET: EquipmentInventory/SetNextMaintenanceDate
+       
+        //[HttpGet]
+        //public IActionResult SetNextMaintenanceDate()
+        //{
+        //    var distinctProducts = _context.Products
+        //                            .Select(p => p.ProductName)
+        //                            .OrderBy(p => p)
+        //                            .ToList();
+
+
+        //    ViewBag.Products = new SelectList(distinctProducts);
+
+        //    return View();
+        //}
+
+
+        //[HttpPost]
+        //public IActionResult SetNextMaintenanceDate(EquipmentInventoryModel model)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        var equipmentList = _context.EquipmentInventory
+        //            .Where(e => e.Product == model.Product)
+        //            .ToList();
+
+        //        foreach (var equipment in equipmentList)
+        //        {
+        //            equipment.NextMaintenanceDate = model.NextMaintenanceDate;
+        //        }
+
+        //        _context.SaveChanges();
+
+
+        //        TempData["Message"] = "Next maintenance date updated successfully.";
+        //    }
+        //    else
+        //    {
+        //        TempData["ErrorMessage"] = "An error occurred while updating the next maintenance date.";
+        //    }
+        //    // If ModelState is not valid, return to the form
+        //    var distinctProducts = _context.EquipmentInventory
+        //        .Select(e => e.Product)
+        //        .Distinct()
+        //        .ToList();
+
+        //    ViewBag.Products = new SelectList(distinctProducts);
+
+        //    return View(model);
+        //}
+
+        //public IActionResult NextMaintenanceDateSet()
+        //{
+        //    return View();
+        //}
+        //[HttpGet]
+        //public IActionResult NextMaintenanceDateSet()
+        //{
+        //    return View(new EquipmentInventoryModel());
+        //}
+
+        [HttpGet]
+        public IActionResult NextMaintenanceDateSet()
+        {
+            var distinctProducts = _context.Products
+                                .Select(p => p.ProductName)
+                                .OrderBy(p => p)
+                                .ToList();
+
+            ViewBag.Products = new SelectList(distinctProducts);
+
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult NextMaintenanceDateSet(EquipmentInventoryModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                // Get the selected product ID
+                int productId = model.ProductId;
+
+                // Get all products with the selected ProductId
+                var products = _context.EquipmentInventory.Where(p => p.ProductId == productId);
+
+                foreach (var product in products)
+                {
+                    // Update NextMaintenanceDate
+                    product.NextMaintenanceDate = model.NextMaintenanceDate;
+                }
+
+                // Save changes
+                _context.SaveChanges();
+
+                TempData["Message"] = "Next maintenance date updated successfully.";
+            }
+            else
+            {
+                TempData["ErrorMessage"] = "An error occurred while updating the next maintenance date.";
+            }
+
+            // Return to the form
+            return View(model);
+        }
+
+
+
+
+        [HttpGet]
+        public IActionResult GetProducts()
+        {
+            var products = _context.Products.ToList();
+            return Ok(products);
+        }
+
+        //[HttpPost]
+        //public IActionResult SetNextMaintenanceDate(EquipmentInventoryModel model)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        // Update the NextMaintenanceDate in the EquipmentInventory table
+        //        var equipment = _context.EquipmentInventory
+        //            .FirstOrDefault(e => e.ProductId == model.ProductId); // Assuming there's a ProductId property in your model
+
+        //        if (equipment != null)
+        //        {
+        //            equipment.NextMaintenanceDate = model.NextMaintenanceDate;
+        //            _context.SaveChanges();
+
+        //            TempData["Message"] = "Next Maintenance Date updated successfully.";
+        //        }
+        //        else
+        //        {
+        //            TempData["ErrorMessage"] = "Equipment not found.";
+        //        }
+        //    }
+
+        //    return RedirectToAction("SetNextMaintenanceDate");
+        //}
 
 
 

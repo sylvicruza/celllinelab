@@ -4,6 +4,7 @@ using Cell_line_laboratory.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Cell_line_laboratory.Migrations
 {
     [DbContext(typeof(Cell_line_laboratoryContext))]
-    partial class Cell_line_laboratoryContextModelSnapshot : ModelSnapshot
+    [Migration("20230916012036_YourMigrationName2")]
+    partial class YourMigrationName2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -330,7 +332,7 @@ namespace Cell_line_laboratory.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime?>("NextMaintenance")
+                    b.Property<DateTime>("NextMaintenance")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Note")
@@ -509,16 +511,16 @@ namespace Cell_line_laboratory.Migrations
                         {
                             Id = 1,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "245c9330-60b4-4d42-bb7f-29d0c5411e3a",
-                            CreatedAt = new DateTime(2023, 9, 16, 8, 25, 17, 593, DateTimeKind.Local).AddTicks(2425),
+                            ConcurrencyStamp = "47291f15-ff7a-4855-b2fe-6d63f4a2d75f",
+                            CreatedAt = new DateTime(2023, 9, 16, 2, 20, 36, 461, DateTimeKind.Local).AddTicks(5469),
                             Email = "superadmin@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             Name = "John Doe",
-                            Password = "AQAAAAEAACcQAAAAEKz3TmVotgxlz3hQ5lZ0QfzlWermUokFyn3/vDwgyM+MDqkoWkoe9Qqw7+vRkKIZzA==",
+                            Password = "AQAAAAEAACcQAAAAEFp7D/YRzrRzzeeKTfipRgvfYyprIpvRjXU/DfHczRCd77631/DnyWqtXni9f3tq7Q==",
                             PhoneNumberConfirmed = false,
                             Role = "SuperUser",
-                            SecurityStamp = "535ef38a-9f45-45f1-97ea-121686f34fd0",
+                            SecurityStamp = "ee2239d3-e52f-46e1-988a-b0a92fb240f1",
                             Status = "Active",
                             TwoFactorEnabled = false,
                             UserType = "SuperAdmin"
@@ -536,10 +538,11 @@ namespace Cell_line_laboratory.Migrations
                     b.Property<decimal?>("Amount")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<DateTime?>("CreatedAt")
+                    b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("CreatedBy")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("LastMaintenanceDate")
@@ -558,9 +561,10 @@ namespace Cell_line_laboratory.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("ProductName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("Quantity")
+                    b.Property<int>("Quantity")
                         .HasColumnType("int");
 
                     b.Property<string>("SerialNumber")

@@ -28,13 +28,30 @@ namespace Cell_line_laboratory.Controllers
         [HttpGet]
         public IActionResult GetMaintenanceHistory(int equipmentId)
         {
-            List<Maintenance> maintenanceHistory = _context.Maintenances
+            // Retrieve maintenance history for the given equipmentId
+            var maintenanceHistory = _context.Maintenances
                 .Where(m => m.EquipmentId == equipmentId)
                 .OrderByDescending(m => m.Date)
                 .ToList();
 
             return Json(maintenanceHistory);
         }
+
+        [HttpGet]
+        public IActionResult Get()
+        {
+            // Retrieve your list of products from the database
+            var products = _context.Products.ToList(); // Replace _context.Products with your actual data access code
+
+            return Ok(products);
+        }
+
+        [HttpGet]
+        public IActionResult SetNextMaintenanceDate()
+        {
+            return View();
+        }
+
 
         [HttpPost]
         public IActionResult CreateMaintenance([FromBody] MaintenanceDto model)
@@ -49,6 +66,7 @@ namespace Cell_line_laboratory.Controllers
                         Quantity = model.Quantity,
                         Note = model.Note,
                         Date = model.Date,
+                        //NextMaintenance = equipment
                         NextMaintenance = model.NextMaintenance,
                         MaintainedById = model.MaintainedBy
                     };

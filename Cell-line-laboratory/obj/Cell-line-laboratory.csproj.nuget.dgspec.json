@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\Cell-line-laboratory.csproj": {}
+    "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\Cell-line-laboratory.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\Cell-line-laboratory.csproj": {
+    "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\Cell-line-laboratory.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\Cell-line-laboratory.csproj",
+        "projectUniqueName": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\Cell-line-laboratory.csproj",
         "projectName": "Cell-line-laboratory",
-        "projectPath": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\Cell-line-laboratory.csproj",
+        "projectPath": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\Cell-line-laboratory.csproj",
         "packagesPath": "C:\\Users\\Bhoyee-pc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\obj\\",
+        "outputPath": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
