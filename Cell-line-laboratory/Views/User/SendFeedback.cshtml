@@ -1,0 +1,32 @@
+﻿@model Cell_line_laboratory.Entities.User
+
+@{
+    ViewData["Title"] = "SendFeedback";
+}
+
+<header class="page-header">
+    <h4 class="page-title">Send us your feedback</h4>
+</header>
+<div class="page-content">
+
+
+
+    <form method="post" asp-action="SendFeedback">
+        @Html.AntiForgeryToken()
+
+        @if (TempData["SuccessMessage"] != null)
+        {
+                <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+        }
+
+        <input class="form-control" id="email" name="email" type="hidden" value="@Model.Email">
+
+        <div class="form-group">
+            <textarea class="form-control" id="comment" name="comment" rows="4" placeholder="Comment" required></textarea>
+        </div>
+
+        <button type="submit" class="btn w-100 rounded-pill btn-outline-success">Send Feedback</button>
+    </form>
+
+
+        </div>

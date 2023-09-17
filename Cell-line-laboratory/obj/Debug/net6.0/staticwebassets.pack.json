@@ -1,647 +1,647 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Cell-line-laboratory.bundle.scp.css",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Cell-line-laboratory.bundle.scp.css",
       "PackagePath": "staticwebassets\\Cell-line-laboratory.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\404-page.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\404-page.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\404-page.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\500-page.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\500-page.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\500-page.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\anonymous-400.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\anonymous-400.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\anonymous-400.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\bg-card-1.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\bg-card-1.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\bg-card-1.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\bg-card-2.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\bg-card-2.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\bg-card-2.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\department-1.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\department-1.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\department-1.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\department-2.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\department-2.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\department-2.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\department-3.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\department-3.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\department-3.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\department-4.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\department-4.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\department-4.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\department-5.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\department-5.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\department-5.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\department-6.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\department-6.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\department-6.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\department-7.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\department-7.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\department-7.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\department-8.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\department-8.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\department-8.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\department-9.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\department-9.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\department-9.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\doctor-400-1.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\doctor-400-1.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\doctor-400-1.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\doctor-400-2.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\doctor-400-2.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\doctor-400-2.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\doctor-400-3.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\doctor-400-3.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\doctor-400-3.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\doctor-400-4.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\doctor-400-4.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\doctor-400-4.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\doctor-400-5.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\doctor-400-5.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\doctor-400-5.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\doctor-400-6.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\doctor-400-6.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\doctor-400-6.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\doctor-400-7.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\doctor-400-7.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\doctor-400-7.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\doctor-400-8.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\doctor-400-8.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\doctor-400-8.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\doctor-400-9.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\doctor-400-9.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\doctor-400-9.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\login-page.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\login-page.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\login-page.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\register-page.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\register-page.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\register-page.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\user-40-1.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\user-40-1.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\user-40-1.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\user-40-10.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\user-40-10.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\user-40-10.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\user-40-2.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\user-40-2.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\user-40-2.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\user-40-3.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\user-40-3.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\user-40-3.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\user-40-4.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\user-40-4.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\user-40-4.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\user-40-5.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\user-40-5.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\user-40-5.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\user-40-6.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\user-40-6.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\user-40-6.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\user-40-7.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\user-40-7.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\user-40-7.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\user-40-8.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\user-40-8.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\user-40-8.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\user-40-9.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\user-40-9.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\user-40-9.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\user-400-1.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\user-400-1.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\user-400-1.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\user-400-2.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\user-400-2.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\user-400-2.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\user-400-3.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\user-400-3.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\user-400-3.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\user-400-4.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\user-400-4.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\user-400-4.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\user-400-5.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\user-400-5.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\user-400-5.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\user-400-6.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\user-400-6.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\user-400-6.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\user-400-7.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\user-400-7.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\user-400-7.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\user-400-8.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\user-400-8.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\user-400-8.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\user-400-9.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\user-400-9.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\user-400-9.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\content\\user-profile.jpg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\content\\user-profile.jpg",
       "PackagePath": "staticwebassets\\assets\\content\\user-profile.jpg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\css\\Chart.min.css",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\css\\Chart.min.css",
       "PackagePath": "staticwebassets\\assets\\css\\Chart.min.css"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\css\\bootstrap-select.min.css",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\css\\bootstrap-select.min.css",
       "PackagePath": "staticwebassets\\assets\\css\\bootstrap-select.min.css"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\css\\bootstrap\\bootstrap.css",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\css\\bootstrap\\bootstrap.css",
       "PackagePath": "staticwebassets\\assets\\css\\bootstrap\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\css\\datatables.min.css",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\css\\datatables.min.css",
       "PackagePath": "staticwebassets\\assets\\css\\datatables.min.css"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\css\\icofont.min.css",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\css\\icofont.min.css",
       "PackagePath": "staticwebassets\\assets\\css\\icofont.min.css"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\css\\jquery.typeahead.css",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\css\\jquery.typeahead.css",
       "PackagePath": "staticwebassets\\assets\\css\\jquery.typeahead.css"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\css\\leaflet.css",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\css\\leaflet.css",
       "PackagePath": "staticwebassets\\assets\\css\\leaflet.css"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\css\\morris.css",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\css\\morris.css",
       "PackagePath": "staticwebassets\\assets\\css\\morris.css"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\css\\simple-line-icons.css",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\css\\simple-line-icons.css",
       "PackagePath": "staticwebassets\\assets\\css\\simple-line-icons.css"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\css\\style.css",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\css\\style.css",
       "PackagePath": "staticwebassets\\assets\\css\\style.css"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\fonts\\icofont\\icofont.woff",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\fonts\\icofont\\icofont.woff",
       "PackagePath": "staticwebassets\\assets\\fonts\\icofont\\icofont.woff"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\fonts\\icofont\\icofont.woff2",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\fonts\\icofont\\icofont.woff2",
       "PackagePath": "staticwebassets\\assets\\fonts\\icofont\\icofont.woff2"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\fonts\\simple-line-icons\\Simple-Line-Icons-v=2.4.0.eot",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\fonts\\simple-line-icons\\Simple-Line-Icons-v=2.4.0.eot",
       "PackagePath": "staticwebassets\\assets\\fonts\\simple-line-icons\\Simple-Line-Icons-v=2.4.0.eot"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\fonts\\simple-line-icons\\Simple-Line-Icons-v=2.4.0.svg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\fonts\\simple-line-icons\\Simple-Line-Icons-v=2.4.0.svg",
       "PackagePath": "staticwebassets\\assets\\fonts\\simple-line-icons\\Simple-Line-Icons-v=2.4.0.svg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\fonts\\simple-line-icons\\Simple-Line-Icons-v=2.4.0.ttf",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\fonts\\simple-line-icons\\Simple-Line-Icons-v=2.4.0.ttf",
       "PackagePath": "staticwebassets\\assets\\fonts\\simple-line-icons\\Simple-Line-Icons-v=2.4.0.ttf"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\fonts\\simple-line-icons\\Simple-Line-Icons-v=2.4.0.woff",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\fonts\\simple-line-icons\\Simple-Line-Icons-v=2.4.0.woff",
       "PackagePath": "staticwebassets\\assets\\fonts\\simple-line-icons\\Simple-Line-Icons-v=2.4.0.woff"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\fonts\\simple-line-icons\\Simple-Line-Icons-v=2.4.0.woff2",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\fonts\\simple-line-icons\\Simple-Line-Icons-v=2.4.0.woff2",
       "PackagePath": "staticwebassets\\assets\\fonts\\simple-line-icons\\Simple-Line-Icons-v=2.4.0.woff2"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\img\\avatar.png",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\img\\avatar.png",
       "PackagePath": "staticwebassets\\assets\\img\\avatar.png"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\img\\favicon.ico",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\img\\favicon.ico",
       "PackagePath": "staticwebassets\\assets\\img\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\img\\layers-2x.png",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\img\\layers-2x.png",
       "PackagePath": "staticwebassets\\assets\\img\\layers-2x.png"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\img\\layers.png",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\img\\layers.png",
       "PackagePath": "staticwebassets\\assets\\img\\layers.png"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\img\\logo.png",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\img\\logo.png",
       "PackagePath": "staticwebassets\\assets\\img\\logo.png"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\img\\logo.svg",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\img\\logo.svg",
       "PackagePath": "staticwebassets\\assets\\img\\logo.svg"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\img\\marker-icon.png",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\img\\marker-icon.png",
       "PackagePath": "staticwebassets\\assets\\img\\marker-icon.png"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\img\\profile1.png",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\img\\profile1.png",
       "PackagePath": "staticwebassets\\assets\\img\\profile1.png"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\js\\Chart.min.js",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\js\\Chart.min.js",
       "PackagePath": "staticwebassets\\assets\\js\\Chart.min.js"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\js\\bootstrap-select.min.js",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\js\\bootstrap-select.min.js",
       "PackagePath": "staticwebassets\\assets\\js\\bootstrap-select.min.js"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\assets\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\js\\datatables.min.js",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\js\\datatables.min.js",
       "PackagePath": "staticwebassets\\assets\\js\\datatables.min.js"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\js\\echarts-gl.min.js",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\js\\echarts-gl.min.js",
       "PackagePath": "staticwebassets\\assets\\js\\echarts-gl.min.js"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\js\\echarts.min.js",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\js\\echarts.min.js",
       "PackagePath": "staticwebassets\\assets\\js\\echarts.min.js"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\js\\jquery-3.6.0.min.js",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\js\\jquery-3.6.0.min.js",
       "PackagePath": "staticwebassets\\assets\\js\\jquery-3.6.0.min.js"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\js\\jquery-migrate-1.4.1.min.js",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\js\\jquery-migrate-1.4.1.min.js",
       "PackagePath": "staticwebassets\\assets\\js\\jquery-migrate-1.4.1.min.js"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\js\\jquery.barrating.min.js",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\js\\jquery.barrating.min.js",
       "PackagePath": "staticwebassets\\assets\\js\\jquery.barrating.min.js"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\js\\jquery.typeahead.min.js",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\js\\jquery.typeahead.min.js",
       "PackagePath": "staticwebassets\\assets\\js\\jquery.typeahead.min.js"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\js\\leaflet.js",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\js\\leaflet.js",
       "PackagePath": "staticwebassets\\assets\\js\\leaflet.js"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\js\\main.js",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\js\\main.js",
       "PackagePath": "staticwebassets\\assets\\js\\main.js"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\js\\morris.min.js",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\js\\morris.min.js",
       "PackagePath": "staticwebassets\\assets\\js\\morris.min.js"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\js\\popper.min.js",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\js\\popper.min.js",
       "PackagePath": "staticwebassets\\assets\\js\\popper.min.js"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\assets\\js\\raphael-min.js",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\assets\\js\\raphael-min.js",
       "PackagePath": "staticwebassets\\assets\\js\\raphael-min.js"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\cellline\\assets\\css\\desktop2.css",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\cellline\\assets\\css\\desktop2.css",
       "PackagePath": "staticwebassets\\cellline\\assets\\css\\desktop2.css"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\cellline\\assets\\css\\index.css",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\cellline\\assets\\css\\index.css",
       "PackagePath": "staticwebassets\\cellline\\assets\\css\\index.css"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\cellline\\assets\\img\\CELL -LINE LABORATORY MANAGEMENT SYSTEM.png",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\cellline\\assets\\img\\CELL -LINE LABORATORY MANAGEMENT SYSTEM.png",
       "PackagePath": "staticwebassets\\cellline\\assets\\img\\CELL -LINE LABORATORY MANAGEMENT SYSTEM.png"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\cellline\\assets\\img\\CELL-DIVISION LABORATORY MANAGEMENT SYSTEM.png",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\cellline\\assets\\img\\CELL-DIVISION LABORATORY MANAGEMENT SYSTEM.png",
       "PackagePath": "staticwebassets\\cellline\\assets\\img\\CELL-DIVISION LABORATORY MANAGEMENT SYSTEM.png"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\cellline\\assets\\img\\Group 80.png",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\cellline\\assets\\img\\Group 80.png",
       "PackagePath": "staticwebassets\\cellline\\assets\\img\\Group 80.png"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\cellline\\assets\\img\\Group 82.png",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\cellline\\assets\\img\\Group 82.png",
       "PackagePath": "staticwebassets\\cellline\\assets\\img\\Group 82.png"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\cellline\\assets\\img\\ani-kolleshi-7jjnJ-QA9fY-unsplash-removebg-preview 1.png",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\cellline\\assets\\img\\ani-kolleshi-7jjnJ-QA9fY-unsplash-removebg-preview 1.png",
       "PackagePath": "staticwebassets\\cellline\\assets\\img\\ani-kolleshi-7jjnJ-QA9fY-unsplash-removebg-preview 1.png"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\cellline\\assets\\img\\cellline_logo-removebg-preview 1.png",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\cellline\\assets\\img\\cellline_logo-removebg-preview 1.png",
       "PackagePath": "staticwebassets\\cellline\\assets\\img\\cellline_logo-removebg-preview 1.png"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\cellline\\assets\\img\\layers.png",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\cellline\\assets\\img\\layers.png",
       "PackagePath": "staticwebassets\\cellline\\assets\\img\\layers.png"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\cellline\\assets\\img\\sharon-pittaway-4_hFxTsmaO4-unsplash-removebg-preview 1.png",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\cellline\\assets\\img\\sharon-pittaway-4_hFxTsmaO4-unsplash-removebg-preview 1.png",
       "PackagePath": "staticwebassets\\cellline\\assets\\img\\sharon-pittaway-4_hFxTsmaO4-unsplash-removebg-preview 1.png"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\uploads\\EquipmentInventory_template.xlsx",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\uploads\\EquipmentInventory_template.xlsx",
       "PackagePath": "staticwebassets\\uploads\\EquipmentInventory_template.xlsx"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\uploads\\SampleCellLineExcelFile.xlsx",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\uploads\\SampleCellLineExcelFile.xlsx",
       "PackagePath": "staticwebassets\\uploads\\SampleCellLineExcelFile.xlsx"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\uploads\\SampleChemicalExcelFile.xlsx",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\uploads\\SampleChemicalExcelFile.xlsx",
       "PackagePath": "staticwebassets\\uploads\\SampleChemicalExcelFile.xlsx"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\uploads\\SampleEnzymeExcelFile.xlsx",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\uploads\\SampleEnzymeExcelFile.xlsx",
       "PackagePath": "staticwebassets\\uploads\\SampleEnzymeExcelFile.xlsx"
     },
     {
-      "Id": "C:\\Users\\Bhoyee-pc\\Downloads\\celllinelab-main1\\celllinelab-main\\celllinelab-main\\Cell-line-laboratory\\wwwroot\\uploads\\SamplePlasmidExcelFile.xlsx",
+      "Id": "C:\\Users\\cents\\source\\repos\\Cell-line-laboratory\\Cell-line-laboratory\\wwwroot\\uploads\\SamplePlasmidExcelFile.xlsx",
       "PackagePath": "staticwebassets\\uploads\\SamplePlasmidExcelFile.xlsx"
     },
     {

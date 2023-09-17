@@ -261,12 +261,12 @@
                     @*    <div class="add-patient"><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add-patient"><span class="btn-icon icofont-plus me-2"></span> Add Patient</button></div>*@
                     <div class="assistant-menu">
                         <a class="link" asp-controller="User" asp-action="Profile">
-                            <span class="link-icon icofont-ui-settings"></span>Settings
+                            <span class="link-icon icofont-ui-settings"></span>Settings and privacy
                         </a>
-                         <a class="link" href="#">
-                        <span class="link-icon icofont-ui-text-chat"></span>Chatbot</a>
-                        <a class="link" href="#">
-                            <span class="link-icon icofont-friendfeed"></span>Feedback
+                        @*  <a class="link" href="#">
+                        <span class="link-icon icofont-ui-text-chat"></span>Chatbot</a>*@
+                        <a class="link" asp-controller="User" asp-action="SendFeedback">
+                            <span class="link-icon icofont-ui-text-chat"></span>Send us feedback
                         </a>
                     </div>
                 

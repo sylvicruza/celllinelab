@@ -3,10 +3,28 @@
 @{
     ViewData["Title"] = "Profile";
 }
+<h4 class="link-icon icofont-ui-lock">Privacy</h4>
+<main>
+    <section>
+        <h6>Notification Preferences</h6>
 
-@*<header class="page-header">
-    <h4 class="page-title">Edit account</h4>
-</header>*@
+            <div class="form-group">
+                <label for="emailNotifications">Email Notifications</label>
+                <input type="checkbox" id="emailNotifications" name="emailNotifications" checked>
+            </div>
+    </section>
+    <section>
+        <h6>Data Sharing</h6>
+        <p>We take your privacy seriously. Here are your options for data sharing:</p>
+
+            <div class="form-group">
+                <label for="shareAnalytics">Share Usage Analytics</label>
+                <input type="checkbox" id="shareAnalytics" name="shareAnalytics" checked>
+            </div>
+    </section>
+</main>
+<hr>
+<h4>Edit Account</h4>
 <div class="page-content">
    
         <div class="col col-12 col-xl-8">
