@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Cell_line_laboratory.Migrations
 {
     [DbContext(typeof(Cell_line_laboratoryContext))]
-    [Migration("20230828211232_EnzymesNChemicalNAntibody")]
-    partial class EnzymesNChemicalNAntibody
+    [Migration("20230916072517_YourMigrationName3")]
+    partial class YourMigrationName3
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -24,6 +24,35 @@ namespace Cell_line_laboratory.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("Cell_line_laboratory.Entities.AssignTask", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("AssignedBy")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Designation")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AssignTask");
+                });
+
             modelBuilder.Entity("Cell_line_laboratory.Entities.CellLine", b =>
                 {
                     b.Property<int>("Id")
@@ -32,7 +61,7 @@ namespace Cell_line_laboratory.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<string>("Code")
+                    b.Property<string>("CellLineCode")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -79,6 +108,65 @@ namespace Cell_line_laboratory.Migrations
                     b.ToTable("CellLine");
                 });
 
+            modelBuilder.Entity("Cell_line_laboratory.Entities.Chemical", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("AntibodyName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CatalogueNo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Data")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletionTimestamp")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsMarkedForDeletion")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Location")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Maker")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Note")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PlasmidCode")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Chemical");
+                });
+
             modelBuilder.Entity("Cell_line_laboratory.Entities.DailyUsage", b =>
                 {
                     b.Property<int>("Id")
@@ -90,7 +178,7 @@ namespace Cell_line_laboratory.Migrations
                     b.Property<decimal>("Balance")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<string>("Code")
+                    b.Property<string>("CellLineCode")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -172,6 +260,95 @@ namespace Cell_line_laboratory.Migrations
                     b.ToTable("Enzyme");
                 });
 
+            modelBuilder.Entity("Cell_line_laboratory.Entities.EquipmentInventory", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<decimal?>("Amount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("LastMaintenanceDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("NextMaintenanceDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ProductCode")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ProductDescription")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ProductName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<string>("SerialNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Vendor")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("EquipmentInventory");
+                });
+
+            modelBuilder.Entity("Cell_line_laboratory.Entities.Maintenance", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("EquipmentId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("MaintainedById")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("NextMaintenance")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Note")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EquipmentId");
+
+                    b.ToTable("Maintenances");
+                });
+
             modelBuilder.Entity("Cell_line_laboratory.Entities.Plasmid", b =>
                 {
                     b.Property<int>("Id")
@@ -221,6 +398,23 @@ namespace Cell_line_laboratory.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("PlasmidCollection");
+                });
+
+            modelBuilder.Entity("Cell_line_laboratory.Entities.Product", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("ProductName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Products");
                 });
 
             modelBuilder.Entity("Cell_line_laboratory.Entities.User", b =>
@@ -317,20 +511,74 @@ namespace Cell_line_laboratory.Migrations
                         {
                             Id = 1,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "c98011b8-56ff-4221-a145-452c0013bef0",
-                            CreatedAt = new DateTime(2023, 8, 28, 22, 12, 32, 187, DateTimeKind.Local).AddTicks(5539),
+                            ConcurrencyStamp = "245c9330-60b4-4d42-bb7f-29d0c5411e3a",
+                            CreatedAt = new DateTime(2023, 9, 16, 8, 25, 17, 593, DateTimeKind.Local).AddTicks(2425),
                             Email = "superadmin@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             Name = "John Doe",
-                            Password = "AQAAAAEAACcQAAAAEHbuOpexE5oJNjWaHRddShrAwCGhaz98zg/aeFKIt0Z9f6LfUFmOMCd5sEpYyoIyTw==",
+                            Password = "AQAAAAEAACcQAAAAEKz3TmVotgxlz3hQ5lZ0QfzlWermUokFyn3/vDwgyM+MDqkoWkoe9Qqw7+vRkKIZzA==",
                             PhoneNumberConfirmed = false,
                             Role = "SuperUser",
-                            SecurityStamp = "1d1c9b0c-b177-46fd-b445-27eddbc89868",
+                            SecurityStamp = "535ef38a-9f45-45f1-97ea-121686f34fd0",
                             Status = "Active",
                             TwoFactorEnabled = false,
                             UserType = "SuperAdmin"
                         });
+                });
+
+            modelBuilder.Entity("Cell_line_laboratory.Models.EquipmentInventoryModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<decimal?>("Amount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime?>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("LastMaintenanceDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("NextMaintenanceDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ProductCode")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ProductDescription")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ProductName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<string>("SerialNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Vendor")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("EquipmentInventoryModel");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -352,11 +600,33 @@ namespace Cell_line_laboratory.Migrations
                     b.ToTable("Roles");
                 });
 
+            modelBuilder.Entity("Cell_line_laboratory.Entities.AssignTask", b =>
+                {
+                    b.HasOne("Cell_line_laboratory.Entities.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Cell_line_laboratory.Entities.CellLine", b =>
                 {
                     b.HasOne("Cell_line_laboratory.Entities.User", null)
                         .WithMany("CellLines")
                         .HasForeignKey("UserId");
+                });
+
+            modelBuilder.Entity("Cell_line_laboratory.Entities.Chemical", b =>
+                {
+                    b.HasOne("Cell_line_laboratory.Entities.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Cell_line_laboratory.Entities.Enzyme", b =>
@@ -370,6 +640,28 @@ namespace Cell_line_laboratory.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("Cell_line_laboratory.Entities.EquipmentInventory", b =>
+                {
+                    b.HasOne("Cell_line_laboratory.Entities.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("Cell_line_laboratory.Entities.Maintenance", b =>
+                {
+                    b.HasOne("Cell_line_laboratory.Entities.EquipmentInventory", "Equipment")
+                        .WithMany("Maintenances")
+                        .HasForeignKey("EquipmentId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.Navigation("Equipment");
+                });
+
             modelBuilder.Entity("Cell_line_laboratory.Entities.Plasmid", b =>
                 {
                     b.HasOne("Cell_line_laboratory.Entities.User", "User")
@@ -379,6 +671,22 @@ namespace Cell_line_laboratory.Migrations
                         .IsRequired();
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Cell_line_laboratory.Models.EquipmentInventoryModel", b =>
+                {
+                    b.HasOne("Cell_line_laboratory.Entities.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("Cell_line_laboratory.Entities.EquipmentInventory", b =>
+                {
+                    b.Navigation("Maintenances");
                 });
 
             modelBuilder.Entity("Cell_line_laboratory.Entities.User", b =>

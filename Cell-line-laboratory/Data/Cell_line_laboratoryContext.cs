@@ -7,6 +7,7 @@ using Cell_line_laboratory.Entities;
 using Cell_line_laboratory.Models;
 using Microsoft.AspNetCore.Identity;
 
+
 namespace Cell_line_laboratory.Data
 {
     public class Cell_line_laboratoryContext : DbContext
@@ -18,6 +19,13 @@ namespace Cell_line_laboratory.Data
 
         public DbSet<Cell_line_laboratory.Entities.User> User { get; set; } = default!;
         public DbSet<Plasmid> PlasmidCollection { get; set; } = default!; // Add this DbSet
+
+        public DbSet<EquipmentInventory> EquipmentInventory { get; set; }
+        public DbSet<Maintenance> Maintenances { get; set; }
+
+        public DbSet<Product> Products { get; set; }
+
+
 
         public DbSet<CellLine> CellLine { get; set; } = default!;
         public DbSet<DailyUsage> DailyUsage { get; set; }
@@ -39,9 +47,25 @@ namespace Cell_line_laboratory.Data
             modelBuilder.ApplyConfiguration(new SeedDataForUser());
             // Apply other configuration classes for other entities as needed
 
-            modelBuilder.Entity<CellLine>() // Use the fully qualified name for CellLine entity
+            modelBuilder.Entity<CellLine>()
                 .HasKey(pc => pc.Id);
+
+            // Add the following code to specify OnDelete behavior
+            modelBuilder.Entity<Maintenance>()
+                .HasOne(m => m.Equipment)
+                .WithMany(e => e.Maintenances)
+                .HasForeignKey(m => m.EquipmentId)
+                .OnDelete(DeleteBehavior.NoAction);
+
+            modelBuilder.Entity<EquipmentInventoryModel>()
+                .HasOne(e => e.Product)
+                .WithMany()
+                .HasForeignKey(e => e.ProductId);
+
         }
+
+        // ... rest of your code
+
 
         public DbSet<Cell_line_laboratory.Entities.Enzyme>? Enzyme { get; set; }
 
@@ -49,7 +73,12 @@ namespace Cell_line_laboratory.Data
 
         public DbSet<Cell_line_laboratory.Entities.AssignTask>? AssignTask { get; set; }
 
-        public DbSet<Cell_line_laboratory.Entities.EquipmentInventory>? EquipmentInventory { get; set; }
+        //public DbSet<Cell_line_laboratory.Entities.EquipmentInventory> EquipmentInventory { get; set; }
+
+        //public DbSet<Cell_line_laboratory.Entities.Maintenance> Maintenances { get; set; }
+
+
+
 
     }
 }

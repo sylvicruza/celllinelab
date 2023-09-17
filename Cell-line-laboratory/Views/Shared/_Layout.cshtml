@@ -204,9 +204,54 @@
 
                                         <li class="menu-item"><a class="item-link" href="#"><span class="link-text">Reports</span></a></li>
                                         <li class="menu-item"><a class="item-link" asp-controller="AssignTask" asp-action="Index"><span class="link-text">Tasks</span></a></li>
+@*                                        <li class="menu-item"><a class="item-link" asp-controller="EquipmentInventory" asp-action="Create"><span class="link-text">Equipment Inventory</span></a></li>
+*@                                        <li class="menu-item has-sub">
+                                            <a class="item-link" href="#"><span class="item-link"></span> <span class="link-text">Inventory</span><span class="link-caret icofont-thin-right"></span></a>
+                                            <ul class="sub">
+                                                <li class="menu-item"><a class="item-link" asp-controller="EquipmentInventory" asp-action="Index"><span class="link-text">View </span></a></li>
+                                                <li class="menu-item"><a class="item-link" asp-controller="EquipmentInventory" asp-action="Create"><span class="link-text">Create </span></a></li>
+                                                <li class="menu-item"><a class="item-link" asp-controller="EquipmentInventory" asp-action="UploadExcel"><span class="link-text">Upload</span></a></li>
+                                                <li class="menu-item"><a class="item-link" asp-controller="EquipmentInventory" asp-action="SearchCellLines"><span class="link-text"> Download </span></a></li>
+
+                                                <li class="menu-item"><a class="item-link" asp-controller="Chemical" asp-action="DeletedItems"><span class="link-text">View Deleted Items</span></a></li>
+                                            </ul>
+                                        </li>
+
 
                                     </ul>
                                 </li>
+
+
+                                <li class="menu-item"><span class="group-title">Equipments</span></li>
+                                <li class="menu-item has-sub">
+                                    <a class="item-link" href="#"><span class="link-icon icofont-opencart"></span> <span class="link-text">Inventories</span> <span class="link-caret icofont-thin-right"></span></a>
+                                    <ul class="sub">
+                                        <li class="menu-item"><a class="item-link" asp-controller="Products" asp-action="Create"><span class="link-text">Create Product </span></a></li>
+
+                                        <li class="menu-item"><a class="item-link" asp-controller="EquipmentInventory" asp-action="Index"><span class="link-text">View </span></a></li>
+                                        <li class="menu-item"><a class="item-link" asp-controller="EquipmentInventory" asp-action="Create"><span class="link-text">Create </span></a></li>
+                                        <li class="menu-item"><a class="item-link" asp-controller="EquipmentInventory" asp-action="UploadExcel"><span class="link-text">Upload</span></a></li>
+@*                                        <li class="menu-item"><a class="item-link" asp-controller="EquipmentInventory" asp-action="SearchCellLines"><span class="link-text"> Download </span></a></li>*@
+
+                                    </ul>
+                                </li>
+                                <li class="menu-item has-sub">
+                                    <a class="item-link" href="#"><span class="link-icon icofont-settings"></span> <span class="link-text">Maintenances</span> <span class="link-caret icofont-thin-right"></span></a>
+                                    <ul class="sub">
+
+                                        <li class="menu-item"><a class="item-link" asp-controller="EquipmentInventory" asp-action="Search"><span class="link-text">Create </span></a></li>
+                                        <li class="menu-item"><a class="item-link" asp-controller="EquipmentInventory" asp-action="NextMaintenanceDateSet"><span class="link-text">schedule </span></a></li>
+
+                                    </ul>
+                                </li>
+    @*                            <li class="menu-item">
+                                    <a class="item-link" asp-controller="EquipmentInventory" asp-action="Search"><span class="link-icon icofont-settings"></span> <span class="link-text">Maintenances</span> <span class="link-caret icofont-thin-right"></span></a>
+
+                                </li>*@
+
+ 
+
+                              
 
                             </ul>
                         </nav>
@@ -216,12 +261,12 @@
                     @*    <div class="add-patient"><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add-patient"><span class="btn-icon icofont-plus me-2"></span> Add Patient</button></div>*@
                     <div class="assistant-menu">
                         <a class="link" asp-controller="User" asp-action="Profile">
-                            <span class="link-icon icofont-ui-settings"></span>Settings
+                            <span class="link-icon icofont-ui-settings"></span>Settings and privacy
                         </a>
-                         <a class="link" href="#">
-                        <span class="link-icon icofont-ui-text-chat"></span>Chatbot</a>
-                        <a class="link" href="#">
-                            <span class="link-icon icofont-friendfeed"></span>Feedback
+                        @*  <a class="link" href="#">
+                        <span class="link-icon icofont-ui-text-chat"></span>Chatbot</a>*@
+                        <a class="link" asp-controller="User" asp-action="SendFeedback">
+                            <span class="link-icon icofont-ui-text-chat"></span>Send us feedback
                         </a>
                     </div>
                 
@@ -352,5 +397,7 @@
             }
         }
     </script>
+    @RenderSection("scripts", required: false)
+
 </body>
 </html>

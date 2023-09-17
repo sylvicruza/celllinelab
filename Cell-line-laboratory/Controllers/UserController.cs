@@ -11,6 +11,7 @@ using Cell_line_laboratory.Services.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using Cell_line_laboratory.Models;
 using Cell_line_laboratory.Services;
+using Cell_line_laboratory.Utils;
 
 namespace Cell_line_laboratory.Controllers
 {
@@ -272,6 +273,38 @@ namespace Cell_line_laboratory.Controllers
             return View("Profile");
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> SendFeedback(string email, string comment)
+        {
+            try
+            {
+                if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(comment))
+                {
+                    ModelState.AddModelError(string.Empty, "Email or comment not provided.");
+                    return View(); // Return the view to show the error message
+                }
+
+                // Assuming EmailSender.SendEmailAsync returns a Task
+                await EmailSender.SendEmailAsync("morenikejiolatunbosun66@gmail.com", "App User Feedback", comment);
+
+                // Feedback received
+                TempData["SuccessMessage"] = "Feedback sent, thank you!";
+                return RedirectToAction("SendFeedback");
+            }
+            catch (Exception ex)
+            {
+                TempData["ErrorMessage"] = "An error occurred: " + ex.Message;
+                return View(); // Return the view to show the error message
+            }
+        }
+
+        public IActionResult SendFeedback()
+        {
+            var user = GetCurrentUser().Result;
+            Console.WriteLine(user);
+            return View(user);
+        }
 
     }
 }

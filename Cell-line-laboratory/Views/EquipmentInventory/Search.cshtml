@@ -1,0 +1,375 @@
+﻿@model List<Cell_line_laboratory.Entities.EquipmentInventory>
+@using Cell_line_laboratory.Entities
+@using System.Security.Claims
+
+<!-- DataTables CSS -->
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+
+<!-- DataTables JS -->
+
+<h2>Maintenance</h2>
+
+<style>
+    /* Add this CSS style to indicate clickable rows */
+    .clickable-row {
+        cursor: pointer;
+    }
+</style>
+
+<div class="input-group mb-3">
+    <input type="text" class="form-control" id="searchQuery" placeholder="Search by Product Name, Product Code, or Serial Number">
+</div>
+
+<div class="container mt-4 hidden" id="searchResultsContainer">
+    <table class="table table-striped" id="searchResultsTable">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Serial Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Count > 0)
+            {
+                foreach (var equipment in Model)
+                {
+                    <tr class="clickable-row" data-id="@equipment.Id"
+                        data-productName="@equipment.ProductName"
+                        data-productCode="@equipment.ProductCode"
+                        data-productDescription="@equipment.ProductDescription"
+                        data-vendor="@equipment.Vendor"
+                        data-serialNumber="@equipment.SerialNumber"
+                        data-quantity="@equipment.Quantity"
+                        data-amount="@equipment.Amount"
+                        data-lastMaintenanceDate="@equipment.LastMaintenanceDate"
+                        data-updatedAt="@equipment.UpdatedAt"
+                        data-createdAt="@equipment.CreatedAt"
+                        data-nextMaintenanceDate="@equipment.NextMaintenanceDate"
+                        data-createdBy="@equipment.CreatedBy">
+                        <td>@equipment.ProductName</td>
+                        <td>@equipment.SerialNumber</td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="2">No records found</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<div class="container mt-4 hidden" id="equipmentDetailsContainer">
+    <h4>Equipment Details</h4>
+    <div id="equipmentDetails" class="list-group">
+        <!-- Details will be displayed here -->
+    </div>
+
+    <h4>Maintenance History</h4>
+    <div class="table-responsive">
+        <table id="maintenanceHistoryTable" class="table table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Quantity</th>
+                    <th>Note</th>
+                    <th>Date</th>
+                    <th>Next Maintenance</th>
+                    <th>Maintained By</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Maintenance history will be displayed here -->
+            </tbody>
+        </table>
+    </div>
+
+</div>
+<div id="createMaintenanceContainer" class="hidden">
+    <h4>Create Maintenance</h4>
+    <form id="createMaintenanceForm" class="maintenance-form">
+
+    <input type="hidden" id="equipmentId" name="equipmentId" />
+
+    <div class="mb-3">
+        <label for="quantity" class="form-label">Quantity</label>
+        <input type="number" class="form-control" id="quantity" name="quantity" required>
+    </div>
+    <div class="mb-3">
+        <label for="note" class="form-label">Note</label>
+        <textarea class="form-control" id="note" name="note" rows="3" required></textarea>
+    </div>
+        <div class="hidden" id="dateAndNextMaintenanceContainer">
+            <div class="mb-3">
+                <label for="date" class="form-label">Date</label>
+                <input type="date" class="form-control" id="date" name="date" value="@DateTime.Now.ToString("yyyy-MM-dd")" required>
+            </div>
+            <div class="mb-3">
+                <label for="nextMaintenance" class="form-label">Next Maintenance</label>
+                <input type="date" class="form-control" id="nextMaintenance" name="nextMaintenance" value="" >
+            </div>
+
+
+@*            <div class="mb-3">
+                <label for="nextMaintenance" class="form-label">Next Maintenance</label>
+                <input type="date" class="form-control" id="nextMaintenance" name="nextMaintenance" value="@DateTime.Now.AddDays(7).ToString("yyyy-MM-dd")" required>
+            </div>*@
+        </div>
+
+    <input type="hidden" id="maintainedBy" name="maintainedBy" value="@User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Name)?.Value" />
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-..."></script>
+
+@section Scripts {
+    <script>
+
+        $(document).ready(function () {
+            // Get the NextMaintenance value from the hidden input
+            var nextMaintenance = $('#nextMaintenanceValue').val();
+
+            function formatDate(dateString) {
+                const date = new Date(dateString);
+                const year = date.getFullYear();
+                const month = String(date.getMonth() + 1).padStart(2, '0'); // Months are 0-indexed
+                const day = String(date.getDate()).padStart(2, '0');
+                return `${year}-${month}-${day}`;
+            }
+
+            // Function to load maintenance history
+            function loadMaintenanceHistory(equipmentId) {
+                $.ajax({
+                    url: '/Maintenance/GetMaintenanceHistory',
+                    type: 'GET',
+                    data: { equipmentId: equipmentId },
+                    success: function (data) {
+                        var maintenanceHistoryTable = $('#maintenanceHistoryTable');
+                        maintenanceHistoryTable.find('tbody').empty();
+
+                        if (data != null && data.length > 0) {
+                            data.forEach(function (maintenance, index) {
+                                var maintenanceInfo = `
+                                <tr>
+                                    <td>${index + 1}</td>
+                                    <td>${maintenance.quantity}</td>
+                                    <td>${maintenance.note}</td>
+                                  <td>${formatDate(maintenance.date)}</td>
+                                <td>${formatDate(maintenance.nextMaintenance)}</td>
+                                    <td>${maintenance.maintainedById}</td>
+                                </tr>
+                            `;
+                                maintenanceHistoryTable.find('tbody').append(maintenanceInfo);
+                            });
+                        } else {
+                            maintenanceHistoryTable.find('tbody').append('<tr><td colspan="6">No maintenance history found</td></tr>');
+                        }
+                    },
+                    error: function (xhr, textStatus, errorThrown) {
+                        console.log(xhr.responseText);
+                    }
+                });
+            }
+
+            function updateUpdatedAt(equipmentId) {
+                $.ajax({
+                    url: '/EquipmentInventory/UpdateUpdatedAt',
+                    type: 'POST',
+                    data: { equipmentId: equipmentId },
+                    success: function (data) {
+                        console.log('UpdatedAt column updated successfully');
+                    },
+                    error: function (xhr, textStatus, errorThrown) {
+                        console.log(xhr.responseText);
+                    }
+                });
+            }
+
+            $('#searchQuery').on('input', function () {
+                var searchQuery = $(this).val();
+
+                $.ajax({
+                    url: '/EquipmentInventory/LSearch',
+                    type: 'GET',
+                    data: { searchQuery: searchQuery },
+                    success: function (data) {
+                        var resultsContainer = $('#searchResultsContainer');
+                        resultsContainer.removeClass('hidden');
+
+                        var tableBody = $('#searchResultsTable tbody');
+                        tableBody.empty();
+
+                        if (data != null && data.length > 0) {
+                            data.forEach(function (equipment) {
+                                var row = `<tr class="clickable-row" data-id="${equipment.id}"
+                                                                                  data-productName="${equipment.productName}"
+                                                                                  data-productCode="${equipment.productCode}"
+                                                                                  data-productDescription="${equipment.productDescription}"
+                                                                                  data-vendor="${equipment.vendor}"
+                                                                                  data-serialNumber="${equipment.serialNumber}"
+                                                                                  data-quantity="${equipment.quantity}"
+                                                                                  data-amount="${equipment.amount}"
+                                                                                  data-lastMaintenanceDate="${equipment.lastMaintenanceDate}"
+                                                                                  data-updatedAt="${equipment.updatedAt}"
+                                                                                  data-createdAt="${equipment.createdAt}"
+                                                                                  data-nextMaintenanceDate="${equipment.nextMaintenanceDate}"
+                                                                                  data-createdBy="${equipment.createdBy}">
+                                                                <td>${equipment.productName}</td>
+                                                                <td>${equipment.serialNumber}</td>
+                                                            </tr>`;
+                                tableBody.append(row);
+                            });
+                        } else {
+                            tableBody.append('<tr><td colspan="2">No records found</td></tr>');
+                        }
+                    },
+                    error: function (xhr, textStatus, errorThrown) {
+                        console.log(xhr.responseText);
+                    }
+                });
+            });
+
+
+            // Existing code...
+
+            $('#searchResultsContainer').on('click', '.clickable-row', function () {
+                var equipmentId = $(this).data('id');
+
+                var detailsContainer = $('#equipmentDetailsContainer');
+                detailsContainer.removeClass('hidden');
+
+                var detailsList = $('#equipmentDetails');
+                detailsList.empty();
+
+                if (equipmentId) {
+                    $('#equipmentId').val(equipmentId);
+
+                    var equipmentData = $(this).data();
+                    var keys = Object.keys(equipmentData);
+
+                    // Define the desired order of details
+                    var desiredOrder = [
+                        "productname",
+                        "productcode",
+                        "productdescription",
+                        "serialnumber",
+                        "quantity",
+                        "lastmaintenancedate",
+                        "updatedat",
+                        "nextmaintenancedate",
+                    ];
+
+                    desiredOrder.forEach(function (key) {
+                        var value = equipmentData[key];
+                        // Check if the value is a date before formatting it
+                        if (key.includes('date')) {
+                            value = formatDate(value);
+                        }
+                        detailsList.append(`<div class="list-group-item">${key}: ${value}</div>`);
+                    });
+
+                    // Load maintenance history
+                    loadMaintenanceHistory(equipmentId);
+
+                    // Set Next Maintenance value from equipment details
+                    var nextMaintenanceFromDetails = formatDate(equipmentData['nextmaintenancedate']);
+                    $('#nextMaintenance').val(nextMaintenanceFromDetails);
+
+                    // Show the "Create Maintenance" form
+                    $('#createMaintenanceContainer').removeClass('hidden');
+                }
+            });
+
+
+            // Existing code...
+
+            $('#createMaintenanceForm').on('submit', function (e) {
+                e.preventDefault();
+                console.log("Form submitted");
+                var nextMaintenanceFromDetails = $('#nextMaintenance').val();
+                console.log(nextMaintenanceFromDetails);
+
+                var equipmentId = $('#createMaintenanceForm #EquipmentId').val();
+                var quantity = $('#createMaintenanceForm #quantity').val();
+                var note = $('#createMaintenanceForm #note').val();
+                var date = $('#createMaintenanceForm #date').val();
+                var nextMaintenance = $('#createMaintenanceForm #nextMaintenance').val();
+                var maintainedBy = $('#createMaintenanceForm #maintainedBy').val();
+
+                $.ajax({
+                    url: '/Maintenance/CreateMaintenance',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    dataType: 'json',
+                    data: JSON.stringify({
+                        equipmentId: $('#equipmentId').val(),
+                        quantity: quantity,
+                        note: note,
+                        date: date,
+                        nextMaintenance: nextMaintenanceFromDetails,  // Use the value from the equipment details
+                        maintainedBy: maintainedBy
+                    }),
+                    success: function (data) {
+                        if (data.success) {
+                            // Clear the form
+                            $('#createMaintenanceForm')[0].reset();
+
+                            // Update the UpdatedAt column in EquipmentInventory table
+                            $.ajax({
+                                url: '/EquipmentInventory/UpdateUpdatedAt',
+                                type: 'POST',
+                                data: { equipmentId: equipmentId },
+                                success: function (updateData) {
+                                    var maintenanceHistoryTable = $('#maintenanceHistoryTable');
+                                    maintenanceHistoryTable.find('tbody').empty();
+
+                                    if (data.maintenanceHistory != null && data.maintenanceHistory.length > 0) {
+                                        data.maintenanceHistory.forEach(function (maintenance, index) {
+                                            var maintenanceInfo = `
+                                            <tr>
+                                                <td>${index + 1}</td>
+                                                <td>${maintenance.quantity}</td>
+                                                <td>${maintenance.note}</td>
+                                                <td>${formatDate(maintenance.date)}</td>
+                                                <td>${formatDate(maintenance.nextMaintenance)}</td>
+                                                <td>${maintenance.maintainedById}</td>
+                                            </tr>
+                                        `;
+                                            maintenanceHistoryTable.find('tbody').append(maintenanceInfo);
+                                        });
+                                    } else {
+                                        maintenanceHistoryTable.find('tbody').append('<tr><td colspan="6">No maintenance history found</td></tr>');
+                                    }
+                                },
+                                error: function (xhr, textStatus, errorThrown) {
+                                    console.log(xhr.responseText);
+                                }
+                            });
+                        } else {
+                            console.error(data.message);
+                        }
+                    },
+                    error: function (xhr, textStatus, errorThrown) {
+                        console.log(xhr.responseText);
+                    }
+                });
+            });
+
+            // Existing code...
+
+
+
+
+            // Existing code...
+
+            $('#dateAndNextMaintenanceContainer').addClass('hidden');
+
+
+        });
+       
+    </script>
+}

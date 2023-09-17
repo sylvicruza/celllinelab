@@ -1,0 +1,75 @@
+﻿@model Cell_line_laboratory.Models.EquipmentInventoryModel
+
+@{
+    ViewData["Title"] = "Set Next Maintenance Date";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success">@TempData["Message"]</div>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+}
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        <ul>
+            @foreach (var key in ViewData.ModelState.Keys)
+            {
+                <li>@Html.ValidationMessage(key)</li>
+            }
+        </ul>
+    </div>
+}
+
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="NextMaintenanceDateSet">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="ProductId" class="control-label">Product Category</label>
+                <select asp-for="ProductId" class="form-control" id="Product"></select>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="NextMaintenanceDate" class="control-label"></label>
+                <input asp-for="NextMaintenanceDate" class="form-control" />
+                <span asp-validation-for="NextMaintenanceDate" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Set Next Maintenance Date" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts
+    {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var dropdown = $("#Product");
+
+            $.ajax({
+                url: '/Maintenance/Get', // Replace with your API endpoint
+                type: "GET",
+                success: function (data) {
+                    console.log(data);
+
+                    $.each(data, function (index, item) {
+                        dropdown.append($('<option></option>').val(item.id).text(item.productName));
+                    });
+                }
+            });
+        });
+    </script>
+}

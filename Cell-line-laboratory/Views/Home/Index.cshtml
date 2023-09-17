@@ -209,6 +209,7 @@
     }
 
     $(document).ready(function () {
+        var chart; // Define a variable to hold the chart instance
 
         function fetchData(year, month) {
             console.log(`Fetching data for Year: ${year}, Month: ${month}`);
@@ -224,49 +225,12 @@
                     var enzymesData = data.enzymes;
                     var plasmidsData = data.plasmids;
 
-                    var ctx = document.getElementById('myChart').getContext('2d');
-
-                    var labels = ['Used', 'Semi-Used', 'Unused']; // Example labels
-                    // ...
-                    new Chart(ctx, {
-                        type: 'bar',
-                        data: {
-                            labels: ['Enzymes', 'Chemicals', 'Cell Line', 'Plasmids'],
-                            datasets: [
-                                {
-                                    label: 'Used',
-                                    data: [enzymesData.usedCount, chemicalsData.usedCount, cellLineData.usedCount, plasmidsData.usedCount],
-                                    backgroundColor: 'rgb(255, 102, 51)',
-                                    borderColor: 'rgb(255, 102, 51)',
-                                    borderWidth: 1,
-                                },
-                                {
-                                    label: 'Semi-Used',
-                                    data: [enzymesData.semiUsedCount, chemicalsData.semiUsedCount, cellLineData.semiUsedCount, plasmidsData.semiUsedCount],
-                                    backgroundColor: 'rgb(214, 181, 149)',
-                                    borderColor: 'rgb(214, 181, 149)',
-                                    borderWidth: 1,
-                                },
-                                {
-                                    label: 'Unused',
-                                    data: [enzymesData.unusedCount, chemicalsData.unusedCount, cellLineData.unusedCount, plasmidsData.unusedCount],
-                                    backgroundColor: 'rgb(51, 153, 51)',
-                                    borderColor: 'rgb(51, 153, 51)',
-                                    borderWidth: 1,
-                                }
-                            ]
-                        },
-                        options: {
-                            scales: {
-                                y: {
-                                    beginAtZero: true
-                                }
-                            }
-                        }
+                    updateChart({
+                        cellLineData,
+                        chemicalsData,
+                        enzymesData,
+                        plasmidsData
                     });
-
-                    // ...
-
                 },
                 error: function (xhr, status, error) {
                     console.error(xhr.responseText);
@@ -275,6 +239,52 @@
                 }
             });
         }
+
+        function updateChart(data) {
+            if (chart) {
+                chart.destroy(); // Destroy the existing chart if it exists
+            }
+
+            var ctx = document.getElementById('myChart').getContext('2d');
+
+            chart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Enzymes', 'Chemicals', 'Cell Line', 'Plasmids'],
+                    datasets: [
+                        {
+                            label: 'Used',
+                            data: [data.enzymesData.usedCount, data.chemicalsData.usedCount, data.cellLineData.usedCount, data.plasmidsData.usedCount],
+                            backgroundColor: 'rgb(255, 102, 51)',
+                            borderColor: 'rgb(255, 102, 51)',
+                            borderWidth: 1,
+                        },
+                        {
+                            label: 'Semi-Used',
+                            data: [data.enzymesData.semiUsedCount, data.chemicalsData.semiUsedCount, data.cellLineData.semiUsedCount, data.plasmidsData.semiUsedCount],
+                            backgroundColor: 'rgb(214, 181, 149)',
+                            borderColor: 'rgb(214, 181, 149)',
+                            borderWidth: 1,
+                        },
+                        {
+                            label: 'Unused',
+                            data: [data.enzymesData.unusedCount, data.chemicalsData.unusedCount, data.cellLineData.unusedCount, data.plasmidsData.unusedCount],
+                            backgroundColor: 'rgb(51, 153, 51)',
+                            borderColor: 'rgb(51, 153, 51)',
+                            borderWidth: 1,
+                        }
+                    ]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        }
+
         $('#yearSelect').change(function () {
             var selectedYear = $(this).val();
             var selectedMonth = $('#monthSelect').val();
@@ -298,13 +308,8 @@
         }
 
         for (var i = 1; i <= 12; i++) {
-            $('#monthSelect').append(`<option value="${i}">${getMonthName(i)}</option>`);
+            $('#monthSelect').append(`<option value="${i}" ${i === initialMonth ? 'selected' : ''}>${getMonthName(i)}</option>`);
         }
     });
-
-
-
-
-
-
 </script>
+

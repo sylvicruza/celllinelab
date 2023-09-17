@@ -35,10 +35,10 @@ namespace Cell_line_laboratory.Controllers
             {
                 ModelState.AddModelError(string.Empty, userInfo);
             }
-            ViewBag.EnzymesCount = _context?.Enzyme?.Count();
-            ViewBag.ChemicalCount = _context?.Chemical?.Count();
-            ViewBag.CelllineCount = _context?.CellLine?.Count();
-            ViewBag.PlasmidCount = _context?.PlasmidCollection?.Count();
+            ViewBag.EnzymesCount = _context?.Enzyme?.Count(e => !e.IsMarkedForDeletion);
+            ViewBag.ChemicalCount = _context?.Chemical?.Count(c => !c.IsMarkedForDeletion);
+            ViewBag.CelllineCount = _context?.CellLine?.Count(c => !c.IsMarkedForDeletion);
+            ViewBag.PlasmidCount = _context?.PlasmidCollection?.Count(p => !p.IsMarkedForDeletion);
             ViewBag.AssignedTask = _context?.AssignTask?.Include(a => a.User).ToListAsync().Result;
             return View();
         }

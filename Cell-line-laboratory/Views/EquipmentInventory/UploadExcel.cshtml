@@ -1,0 +1,85 @@
+﻿@model Cell_line_laboratory.Models.EquipmentInventoryModel
+
+@{
+    ViewData["Title"] = "Upload Equipment Inventory Excel";
+}
+
+
+<div class="container">
+    <h2>@ViewData["Title"]</h2>
+
+    @if (TempData.ContainsKey("SuccessMessage"))
+    {
+        <div class="alert alert-success">
+            @TempData["SuccessMessage"]
+        </div>
+    }
+
+    @if (TempData.ContainsKey("ErrorMessage"))
+    {
+        <div class="alert alert-danger" id="errorMessage">
+            @TempData["ErrorMessage"]
+        </div>
+    }
+
+    <form method="post" enctype="multipart/form-data" onsubmit="return validateForm();">
+        <div class="form-group">
+            <label asp-for="Product" class="control-label">Product Category</label>
+            <select asp-for="Product" class="form-control" id="Product" required>
+                <option value="">-- Select Here --</option>
+            </select>
+        </div>
+        <input type="hidden" id="SelectedProductId" name="SelectedProductId" />
+
+        <div class="mb-3">
+            <label for="excelFile" class="form-label">Select Excel File:</label>
+            <input type="file" class="form-control" name="file" id="excelFile" accept=".xlsx">
+        </div>
+        <button type="submit" class="btn btn-primary">Upload</button>
+        <a href="/uploads/SampleCellLineExcelFile.xlsx" class="btn btn-link" download>Download Sample Excel File</a>
+    </form>
+</div>
+
+
+@section scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function validateForm() {
+            var fileInput = document.getElementById("excelFile");
+            if (fileInput.files.length === 0) {
+                alert("Please select an Excel file to upload.");
+                return false;
+            }
+            return true;
+        }
+
+        //$(document).ready(function () {
+        //    var dropdown = $("#Product");
+
+        //    dropdown.change(function () {
+        //        var selectedProductId = $(this).val();
+        //        $("#SelectedProductId").val(selectedProductId);
+        //    });
+
+        $(document).ready(function () {
+            var dropdown = $("#Product");
+
+            $.ajax({
+                url: '/Maintenance/Get', // Replace with your API endpoint
+                type: "GET",
+                success: function (data) {
+                    console.log(data);
+
+                    $.each(data, function (index, item) {
+                        dropdown.append($('<option></option>').val(item.id).text(item.productName));
+                    });
+                }
+            });
+                dropdown.change(function () {
+                    var selectedProductId = $(this).val();
+                    $("#SelectedProductId").val(selectedProductId);
+                });
+        });
+    </script>
+}
+

@@ -1,0 +1,30 @@
+﻿@model List<Cell_line_laboratory.Entities.EquipmentInventory>
+
+<h1>Equipment Inventory Search</h1>
+
+<form asp-action="Search" method="get">
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" name="searchQuery" placeholder="Search by Product Name, Product Code, or Serial Number">
+        <button class="btn btn-outline-primary" type="submit">Search</button>
+    </div>
+</form>
+
+<div class="table-responsive">
+    <!-- Display search results here -->
+    <table class="table table-striped">
+        <!-- Add table headers here -->
+        <thead>
+            <!-- ... -->
+        </thead>
+        <tbody>
+            @foreach (var equipment in Model)
+            {
+                <tr>
+                    <!-- Add table rows here -->
+                    <td>@equipment.ProductName</td>
+                    <!-- ... -->
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
